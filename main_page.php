@@ -1,5 +1,5 @@
 <?php
-
+include("header.php");
 ?>
 
 
@@ -21,22 +21,22 @@
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
 	<div class="row" style="text-align: center;">
 		<a href="https://en.wikipedia.org/wiki/Cat">
-			<img src="./test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="test_images/cat.987.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="test_images/cat.988.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="test_images/cat.989.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="test_images/cat.990.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="figures/test_images/cat.987.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="figures/test_images/cat.988.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="figures/test_images/cat.989.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="figures/test_images/cat.990.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
 		</a>
 	</div>
 		
@@ -52,20 +52,19 @@
 
 	<div class ="dropdown-container">
 	<div class="dropdown">
-    <button class="dropbtn">Mu3e</button>
+    <button class="dropdown-btn">Mu3e</button>
     	<div class="dropdown-content">
-		<a href="#">
-			Hi this is mu3e</a>
+		<a href="#">Hi this is mu3e</a>
     	</div>
   	</div>
 	<div class="dropdown">
-    <button class="dropbtn">ATLAS</button>
+    <button class="dropdown-btn">ATLAS</button>
     	<div class="dropdown-content">
 		<a href="#">Hi I'm ATLAS</a>
     	</div>
   	</div>
 	<div class="dropdown">
-    <button class="dropbtn">HVMAPS</button>
+    <button class="dropdown-btn">HVMAPS</button>
     	<div class="dropdown-content">
 		<a href="#">Hi I'm HVMAPS</a>
     	</div>
@@ -76,11 +75,10 @@
 <br/>
 
 </div>
-<div id="lightboxOverlay" dir="ltr" style="background: #000000"><p><br/>
+<p><br/>
 <br/>
 
-</p>
-</div>
+</p> 
 <p><span id="lightbox" dir="ltr" style="position: absolute; left: 0cm; width: 100%; border: none; padding: 0cm; background: #ffffff"><p>
 	<br/>
 <br/>
@@ -100,5 +98,5 @@
 </html>
 
 <?php
-include("footer.php.inc"); 
+include("footer.php"); 
 ?>
