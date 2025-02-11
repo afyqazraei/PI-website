@@ -11,6 +11,7 @@ include("header.php");
     <title>PI Main webpage</title>
 	<!-- Include style file -->
     <link rel="stylesheet" type="text/css" href="design.css">
+
 </head>
 
 <body lang="en-US" dir="ltr">
@@ -41,7 +42,6 @@ include("header.php");
 	</div>
 		
 	<p style="margin-bottom: 0cm">
-		<h3>Welcome to our webpage! </h3>
                 Our group is involved in several research projects in the field of experimental particle physics,
                 with a focus on the study of fundamental particles and their interactions.
                 This includes the participation in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
@@ -70,31 +70,18 @@ include("header.php");
     	</div>
 	</div>
 	</div>
-	<p style="margin-bottom: 0cm"><a href="#top">
-<br/>
-<br/>
+	</p>
+	<p style="margin-bottom: 0cm"><a href="#top"></a></p>
+
 
 </div>
-<p><br/>
-<br/>
-
-</p> 
-<p><span id="lightbox" dir="ltr" style="position: absolute; left: 0cm; width: 100%; border: none; padding: 0cm; background: #ffffff"><p>
-	<br/>
-<br/>
-
-</p>
-</span><br/>
-<br/>
-
-</p>
 
 
 <!-- JavaScripts -->
 <script type="text/javascript" src="buttons.js"></script>
 
-
 </body>
+
 </html>
 
 <?php

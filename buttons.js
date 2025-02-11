@@ -1,5 +1,5 @@
 // Open the corresponding dropdown menu when the button is clicked
-document.querySelectorAll('.dropbtn').forEach(button => {
+document.querySelectorAll('.dropdown-btn').forEach(button => {
     button.addEventListener('click', function() {
         let dropdownContent = this.nextElementSibling;
         dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';

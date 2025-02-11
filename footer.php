@@ -13,7 +13,7 @@
     <div class="tab-bar-footer-left">
         <table>
             <tr>
-                <th> Contacts: </th>
+                <th style="color: var(--PI-darkred)"> Contacts: </th>
             </tr>
             <tr>
                 <td>Group Leader: <a href="mailto:schoning@physi.uni-heidelberg.de">shoning@physi.uni-heidelberg.de</a></td>
