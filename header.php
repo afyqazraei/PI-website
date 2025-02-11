@@ -16,14 +16,14 @@
             </a>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
+            <li><a href="main_page.php">Home</a></li>
             <li><a href="#">Research</a></li>
             <li class="dropdown">
-                <a href="http://www.physi.uni-heidelberg.de/Forschung/he/publications.php">Publications</a>
+                <a href="#">Publications</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Papers</a></li>
-                    <li><a href="#">Talks</a></li>
-                    <li><a href="#">Theses</a></li>
+                    <li><a href="#">ATLAS</a></li>
+                    <li><a href="#">HV-MAPS</a></li>
+                    <li><a href="#">Mu3e</a></li>
                 </ul>
             </li>
             <li><a href="#">Teaching</a></li>
