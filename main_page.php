@@ -42,10 +42,9 @@ include("header.php");
 	</div>
 		
 	<p style="margin-bottom: 0cm">
-                Our group is involved in several research projects in the field of experimental particle physics,
-                with a focus on the study of fundamental particles and their interactions.
-                This includes the participation in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
-                the Mu3e experiment at PSI and the development of new high resolution Silicon detector technologies.
+				Our group is involved in a few different research directions in the field of experimental particle
+				physics. We participate in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
+                the Mu3e experiment at PSI and in the development of new high resolution Silicon detector technologies.
 	
 	
 	<h2>Our Research Subgroups</h2>
