@@ -72,6 +72,13 @@ include("header.php");
 	</p>
 	<p style="margin-bottom: 0cm"><a href="#top"></a></p>
 
+	<h2> News</h2>
+
+	<ul> 
+		<li> We are building our fancy new website that would be better than than every website of all other lousy groups. </li>
+		<li> News 2 </li>
+
+	</ul>
 
 </div>
 
