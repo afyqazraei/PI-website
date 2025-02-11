@@ -35,7 +35,7 @@
         <table>
             <tr>
                 <!-- <td><a href="#"><img src="figs/logo-pi-bunt.jpg" alt="PILogo" style="height: 90px; vertical-align: middle;"></a></td> -->
-                <td><a href="#"><img src="figures/hd_uni_logo.png" alt="UNILogo" style="height: 90px; vertical-align: middle;"></a></td>
+                <td><a href="#"><img src="figures/hd_uni_logo.png" alt="UNILogo" style="height: 105px; vertical-align: middle;"></a></td>
             </tr>
         </table>
         <!-- End table -->
