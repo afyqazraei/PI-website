@@ -7,62 +7,38 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Button</title>
-    <style>
-        /* Basic styling for the dropdown */
-        .dropdown {
-            position: relative;
-            /*display: inline-block;*/
-            display: inline-flex;
-            /* align-items: center; */
-            width: 30%;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color:rgb(250, 197, 147);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-        }
-
-        .dropdown-content a {
-            color: black;
-            padding: 100px 120px;
-            text-decoration: none;
-            display: block;
-        }
-
-		.dropdown-content a:hover {
-			background-color: #ddd;
-		}
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        .dropdown-btn {
-            padding: 25px 100px;
-            font-size: 100%;
-            flex: 1;
-            cursor: pointer;
-            background-color:rgba(218, 73, 16, 0.86);
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PI Main webpage</title>
+	<!-- Include style file -->
+    <link rel="stylesheet" type="text/css" href="design.css">
 </head>
 
 <body lang="en-US" dir="ltr">
 <br/>
-	<h1 class="western">Welcome to the High Energy Group</h1> 
-	<p style="margin-bottom:   0cm"> <img src="https://www.physi.uni-heidelberg.de/~schoning/HE/Gruppenbild_HE_neutrallight.png"
-  name="Bild6" align="left" width="448" height="333"> <br clear="left"/></img>
+	<h1 class="western">Welcome to the High Energy  Group</h1> 
+	<p style="margin-bottom:   0cm"> 
 
-	<ul>
+	<!-- Collage of our pictures (TODO: can we write a loop?)-->
+	<div class="row" style="text-align: center;">
+		<a href="https://en.wikipedia.org/wiki/Cat">
+			<img src="./test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="test_images/cat.987.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="test_images/cat.988.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="test_images/cat.989.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="test_images/cat.990.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="./test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
+			<img src="test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
+		</a>
+	</div>
 		
 	<p style="margin-bottom: 0cm">
 		<h3>Welcome to our webpage! </h3>
@@ -76,25 +52,24 @@
 
 	<div class ="dropdown-container">
 	<div class="dropdown">
-    <button class="dropdown-btn">Mu3e</button>
+    <button class="dropbtn">Mu3e</button>
     	<div class="dropdown-content">
-		<a href="#">Hi I'm mu3e</a>
+		<a href="#">
+			Hi this is mu3e</a>
     	</div>
   	</div>
 	<div class="dropdown">
-    <button class="dropdown-btn">ATLAS</button>
+    <button class="dropbtn">ATLAS</button>
     	<div class="dropdown-content">
 		<a href="#">Hi I'm ATLAS</a>
     	</div>
   	</div>
 	<div class="dropdown">
-    <button class="dropdown-btn">HVMAPS</button>
+    <button class="dropbtn">HVMAPS</button>
     	<div class="dropdown-content">
 		<a href="#">Hi I'm HVMAPS</a>
     	</div>
 	</div>
-	</div>
-	</ul>
 	</div>
 	<p style="margin-bottom: 0cm"><a href="#top">
 <br/>
@@ -110,33 +85,15 @@
 	<br/>
 <br/>
 
-	</p>
+</p>
 </span><br/>
 <br/>
 
 </p>
 
 
-<!-- Optional JavaScript to toggle dropdowns on click -->
-<script>
-    document.querySelectorAll('.dropdown-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            let dropdownContent = this.nextElementSibling;
-            dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-        });
-    });
-
-	document.addEventListener('click', function(event) {
-		document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-			if (!dropdown.previousElementSibling.contains(event.target)) {
-				dropdown.style.display = 'none';
-			}
-		});
-	});
-
-
-	
-</script>
+<!-- JavaScripts -->
+<script type="text/javascript" src="buttons.js"></script>
 
 
 </body>
