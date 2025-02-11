@@ -3,6 +3,7 @@
     --PI-darkred: #860000;
     --PI-lightred: #ffadad;
     --PI-red: #b5152b;
+    --PI-sand: #fee2e2;
 }
 
 /* Set headers colors */
@@ -10,8 +11,9 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--PI-darkred);
 }
 body {
-    width: 80%;
-    margin: auto; 
+    width: 60%;
+    margin: auto;
+    text-align: center;
     box-sizing: border-box; 
 }
 
@@ -25,10 +27,10 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ddd;
-    min-width: 160px;
-    top: 70px; /* Set the vertical offset */
-    left: 0; /* Set the horizontal offset */
+    background-color: var(--PI-sand);
+    width: 60vw; /* Set the width to be full page */
+    top: 80px; /* Set the vertical offset */
+    left: 0; /* Set the horizontal offset to the left corner of the page */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -42,7 +44,7 @@ body {
 }
 
 .dropdown-content a:hover {
-	background-color: #ddd;
+	background-color: var(--PI-sand);
 }
 
 .dropdown:hover .dropdown-content {
@@ -50,12 +52,16 @@ body {
 }
 
 .dropdown-btn {
-    padding: 25px 100px;
+    padding: 25px;
     font-size: 100%;
     cursor: pointer;
     flex: 1;
-    background-color: var(--PI-lightred);
-    color: black;
-    border: none;
+    font-weight: bold;
+    background-color: var(--PI-sand);
+    text-align: center;
+    color: var(--PI-darkred);
+    border: 2px solid var(--PI-darkred);
     border-radius: 5px;
+    width: 33%; 
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }

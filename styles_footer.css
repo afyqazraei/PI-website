@@ -1,8 +1,16 @@
+/* Define PI colors */
+:root {
+    --PI-darkred: #860000;
+    --PI-lightred: #ffadad;
+    --PI-red: #b5152b;
+    --PI-sand: #fee2e2;
+}
+
 
 
 .tab-bar-footer {
     clear: both;
-    background-color: #ffbebe; 
+    background-color: var(--PI-sand); 
     padding: 0px 0;
     overflow: hidden;/*ensure that the container will wrap around the floated elements inside it*/
 }

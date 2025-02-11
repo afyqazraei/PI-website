@@ -13,19 +13,19 @@
     <div class="tab-bar-footer-left">
         <table>
             <tr>
-                <th> Contacts: </th>
+                <th style="color: var(--PI-darkred)"> Contacts </th>
             </tr>
             <tr>
-                <td>Group Leader: <a href="mailto:schoning@physi.uni-heidelberg.de">shoning@physi.uni-heidelberg.de</a></td>
+                <td><b>Group Leader</b> <a href="mailto:schoning@physi.uni-heidelberg.de">schoning@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td>HV-MAPS <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></td>
+                <td><b>Mu3e</b> <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td>ATLAS: <a href="mailto:dittmeier@physi.uni-heidelberg.de">dittmeier@physi.uni-heidelberg.de</a></td>
+                <td><b>ATLAS</b> <a href="mailto:dittmeier@physi.uni-heidelberg.de">dittmeier@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td>Mu3e: <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></td>
+                <td><b>HV-MAPS</b> <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></td>
             </tr>
         </table>
         <!-- End table -->
@@ -35,7 +35,7 @@
         <table>
             <tr>
                 <!-- <td><a href="#"><img src="figs/logo-pi-bunt.jpg" alt="PILogo" style="height: 90px; vertical-align: middle;"></a></td> -->
-                <td><a href="#"><img src="figures/hd_uni_logo.png" alt="UNILogo" style="height: 90px; vertical-align: middle;"></a></td>
+                <td><a href="#"><img src="figures/hd_uni_logo.png" alt="UNILogo" style="height: 105px; vertical-align: middle;"></a></td>
             </tr>
         </table>
         <!-- End table -->
