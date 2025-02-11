@@ -26,10 +26,10 @@
                     <li><a href="#">Mu3e</a></li>
                 </ul>
             </li>
-            <li><a href="#">Teaching</a></li>
-            <li><a href="#">People</a></li>
+            <li><a href="https://physi.uni-heidelberg.de/~fritz/PI-website/teaching.php">Teaching</a></li>
+            <li><a href="http://www.physi.uni-heidelberg.de/Forschung/he/people.php">People</a></li>
             <li class="dropdown">
-                <a href="#">Open Positions</a>
+                <a href="http://www.physi.uni-heidelberg.de/Forschung/he/positions.php">Open Positions</a>
                 <ul class="dropdown-menu">
                     <li><a href="https://www.physi.uni-heidelberg.de/Jobs/jobs.php">Bachelor & Master Theses</a></li>
                     <li><a href="https://www.physi.uni-heidelberg.de/Jobs/jobs.php">PhD & PostDoc Positions</a></li>

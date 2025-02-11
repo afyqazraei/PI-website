@@ -1,42 +1,46 @@
 /* Base styles */
 .tab-bar {
     background-color: #b5152b;  /* Light red */
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* Logo on left, menu on right */
+    padding: 14px 20px;
+    display: flex;  
+    align-items: center;  
+    justify-content: space-between;  
 }
 
-body {
-    width: 60%;
-    margin: auto;
-}
-
-/* Logo styling */
 .logo img {
-    height: 60px; /* Adjust size as needed */
+    height: 50px; /* Adjust as needed */
     width: auto;
 }
 
-/* Navigation menu */
+/* Ensure menu stays evenly spaced */
 .tab-bar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap; 
 }
 
-/* Top-level menu items */
-.tab-bar > ul > li {
+/* Make sure items are evenly spaced and centered */
+.tab-bar ul li {
     position: relative;
-    margin: 0;
-    padding: 10px 15px;
-    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 20px; /* Ensure even spacing around text */
+    display: inline-block;  
+    align-items: center;  /* Center the text vertically */
 }
 
-/* Vertical separator between top-level tabs */
-.tab-bar > ul > li:not(:last-child) {
-    border-right: 2px solid #ffadad; /* Dark red vertical separator */
+/* Add vertical separators */
+.tab-bar ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%; /* Adjust line height */
+    width: 2px;
+    background-color: #ffadad; /* Dark red vertical separator */
 }
 
 /* Navigation links */
@@ -45,7 +49,7 @@ body {
     color: #ffffff; /* White text */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
-    font-size: 120%;
+    font-size: 16pt;
 }
 
 .tab-bar ul li a:hover {
