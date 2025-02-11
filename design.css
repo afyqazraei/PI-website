@@ -1,0 +1,61 @@
+/* Define PI colors */
+:root {
+    --PI-darkred: #860000;
+    --PI-lightred: #ffadad;
+    --PI-red: #b5152b;
+}
+
+/* Set headers colors */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--PI-darkred);
+}
+body {
+    width: 60%;
+    margin: auto; 
+    box-sizing: border-box; 
+}
+
+/* Basic styling for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+    width: 30%;
+}
+/* Box for the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ddd;
+    min-width: 160px;
+    top: 70px; /* Set the vertical offset */
+    left: 0; /* Set the horizontal offset */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Text in the dropdow */
+.dropdown-content a {
+    color: black;
+    padding: 100px 120px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-btn {
+    padding: 25px 100px;
+    font-size: 100%;
+    cursor: pointer;
+    flex: 1;
+    background-color: var(--PI-lightred);
+    color: black;
+    border: none;
+    border-radius: 5px;
+}

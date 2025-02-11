@@ -1,0 +1,36 @@
+
+/* Base styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    width: 60%;
+    padding: 0;  /* Light red */
+    text-decoration-color: black;
+}
+
+.tab-bar-footer {
+    clear: both;
+    background-color: #ffbebe; 
+    padding: 0px 0;
+    overflow: hidden;/*ensure that the container will wrap around the floated elements inside it*/
+}
+.tab-bar-footer-left {
+    float: left; /* Light red */
+    padding: 0px 0;
+    margin: 2%;
+    text-align: left;
+    color: black;
+    font-size: 16px;
+}
+.tab-bar-footer-left a {
+    color: black; /* Change this to your desired hyperlink color */
+}
+
+.tab-bar-footer-right {
+    float: right; /* Light red */
+    padding: 0px 0;
+    margin: 2%;
+    text-align: right; 
+}
+
+
