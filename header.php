@@ -16,20 +16,20 @@
             </a>
         </div>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Research</a></li>
+            <li><a href="http://www.physi.uni-heidelberg.de/Forschung/he/main_page.php">Home</a></li>
+            <li><a href="http://www.physi.uni-heidelberg.de/Forschung/he/research.php">Research</a></li>
             <li class="dropdown">
-                <a href="http://www.physi.uni-heidelberg.de/Forschung/he/publications.php">Publications</a>
+                <a href="#">Publications</a>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Papers</a></li>
-                    <li><a href="#">Talks</a></li>
-                    <li><a href="#">Theses</a></li>
+                    <li><a href="#">ATLAS</a></li>
+                    <li><a href="#">Mu3e</a></li>
+                    <li><a href="#">HV-MAPS</a></li>
                 </ul>
             </li>
-            <li><a href="#">Teaching</a></li>
-            <li><a href="#">People</a></li>
+            <li><a href="https://physi.uni-heidelberg.de/~fritz/PI-website/teaching.php">Teaching</a></li>
+            <li><a href="http://www.physi.uni-heidelberg.de/Forschung/he/people.php">People</a></li>
             <li class="dropdown">
-                <a href="#">Open Positions</a>
+                <a href="http://www.physi.uni-heidelberg.de/Forschung/he/positions.php">Open Positions</a>
                 <ul class="dropdown-menu">
                     <li><a href="https://www.physi.uni-heidelberg.de/Jobs/jobs.php">Bachelor & Master Theses</a></li>
                     <li><a href="https://www.physi.uni-heidelberg.de/Jobs/jobs.php">PhD & PostDoc Positions</a></li>
