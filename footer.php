@@ -13,19 +13,19 @@
     <div class="tab-bar-footer-left">
         <table>
             <tr>
-                <th style="color: var(--PI-darkred)"> Contacts: </th>
+                <th style="color: var(--PI-darkred)"> Contacts </th>
             </tr>
             <tr>
-                <td>Group Leader: <a href="mailto:schoning@physi.uni-heidelberg.de">shoning@physi.uni-heidelberg.de</a></td>
+                <td><b>Group Leader</b> <a href="mailto:schoning@physi.uni-heidelberg.de">schoning@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td>HV-MAPS <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></td>
+                <td><b>Mu3e</b> <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td>ATLAS: <a href="mailto:dittmeier@physi.uni-heidelberg.de">dittmeier@physi.uni-heidelberg.de</a></td>
+                <td><b>ATLAS</b> <a href="mailto:dittmeier@physi.uni-heidelberg.de">dittmeier@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td>Mu3e: <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></td>
+                <td><b>HV-MAPS</b> <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></td>
             </tr>
         </table>
         <!-- End table -->

@@ -64,9 +64,9 @@ include("header.php");
     	</div>
   	</div>
 	<div class="dropdown">
-    <button class="dropdown-btn">HVMAPS</button>
+    <button class="dropdown-btn">HV-MAPS</button>
     	<div class="dropdown-content">
-		<a href="#">Hi I'm HVMAPS</a>
+		<a href="#">Hi I'm HV-MAPS</a>
     	</div>
 	</div>
 	</div>
