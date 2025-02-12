@@ -1,4 +1,5 @@
 <?php
+$subpath = $_SERVER['REQUEST_URI'];
 include("header.php");
 ?>
 
