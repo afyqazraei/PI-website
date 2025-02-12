@@ -17,6 +17,17 @@ body {
     box-sizing: border-box; 
 }
 
+ul {
+    list-style-type: square;
+    padding-left: 50 px;
+    padding-right: 50 px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
 /* Basic styling for the dropdown */
 .dropdown {
     position: relative;
