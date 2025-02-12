@@ -1,6 +1,8 @@
 <?php
 $subpath = $_SERVER['REQUEST_URI'];
-include("header.php");
+$incpath = "assets/inc";
+include($incpath . "/config.php");
+include($headerInc);
 ?>
 
 
@@ -11,7 +13,7 @@ include("header.php");
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>PI Main webpage</title>
 	<!-- Include style file -->
-    <link rel="stylesheet" type="text/css" href="design.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo $designCss;?>">
 </head>
 
 <body lang="en-US" dir="ltr">
@@ -24,5 +26,5 @@ include("header.php");
 </html>
 
 <?php
-include("footer.php"); 
+include($footerInc); 
 ?>
