@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Header</title>
-    <link rel="stylesheet" href="<?php echo dirname($subpath);?>/styles_header.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="<?php echo $headerCss;?>">
+    
 </head>
 <body>
 
@@ -12,7 +13,7 @@
     <nav class="tab-bar" style="text-align: center;">
         <div class="logo">
             <a href="https://www.physi.uni-heidelberg.de/"> <!-- Add link here -->
-                <img src="<?php echo dirname($subpath)?>/figures/logo-pi.png" alt="Logo">
+                <img src="<?php echo dirname($subpath);?>/figures/logo-pi.png" alt="Logo">
             </a>
         </div>
         <ul>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Footer</title>
-    <link rel="stylesheet" href="<?php echo dirname($subpath);?>/styles_footer.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="<?php echo $footerCss;?>"> <!-- Link to external CSS -->
 </head>
 <body>
 
@@ -16,16 +16,16 @@
                 <th style="color: var(--PI-darkred)"> Contacts </th>
             </tr>
             <tr>
-                <td><b>Group Leader</b> <a href="mailto:schoning@physi.uni-heidelberg.de">schoning@physi.uni-heidelberg.de</a></td>
+                <td><b>Group Leader: </b> <a href="mailto:schoning@physi.uni-heidelberg.de">schoning@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td><b>Mu3e</b> <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></td>
+                <td><b>Mu3e: </b> <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td><b>ATLAS</b> <a href="mailto:dittmeier@physi.uni-heidelberg.de">dittmeier@physi.uni-heidelberg.de</a></td>
+                <td><b>ATLAS: </b> <a href="mailto:dittmeier@physi.uni-heidelberg.de">dittmeier@physi.uni-heidelberg.de</a></td>
             </tr>
             <tr>
-                <td><b>HV-MAPS</b> <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></td>
+                <td><b>HV-MAPS: </b> <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></td>
             </tr>
         </table>
         <!-- End table -->
