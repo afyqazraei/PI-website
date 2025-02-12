@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Footer</title>
-    <link rel="stylesheet" href="styles_footer.css"> <!-- Link to external CSS -->
+    <link rel="stylesheet" href="<?php echo dirname($subpath);?>/styles_footer.css"> <!-- Link to external CSS -->
 </head>
 <body>
 
@@ -35,7 +35,7 @@
         <table>
             <tr>
                 <!-- <td><a href="#"><img src="figs/logo-pi-bunt.jpg" alt="PILogo" style="height: 90px; vertical-align: middle;"></a></td> -->
-                <td><a href="#"><img src="figures/hd_uni_logo.png" alt="UNILogo" style="height: 105px; vertical-align: middle;"></a></td>
+                <td><a href="#"><img src="<?php echo dirname($subpath)?>/figures/hd_uni_logo.png" alt="UNILogo" style="height: 105px; vertical-align: middle;"></a></td>
             </tr>
         </table>
         <!-- End table -->
