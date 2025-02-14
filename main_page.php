@@ -19,34 +19,32 @@ include($headerInc);
 <body lang="en-US" dir="ltr">
 <br/>
 	<h1 class="western">Welcome to the High Energy  Group</h1> 
-	<p style="margin-bottom:   0cm"> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
 	<div class="row" style="text-align: center;">
-		<a href="https://en.wikipedia.org/wiki/Cat">
-			<img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="figures/test_images/cat.987.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="figures/test_images/cat.988.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="figures/test_images/cat.989.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="figures/test_images/cat.990.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;">
-			<img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;">
-		</a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.987.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.988.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.989.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.990.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;"></a>
+		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;"></a>
 	</div>
 		
 	<p style="margin-bottom: 0cm">
-				Our group is involved in a few different research directions in the field of experimental particle
-				physics. We participate in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
-                the Mu3e experiment at PSI and in the development of new high resolution Silicon detector technologies.
+	Our group is involved in several research projects in the field of experimental particle physics,
+                with a focus on the study of fundamental particles and their interactions.
+                This includes the participation in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
+                the Mu3e experiment at PSI and the development of new high resolution Silicon detector technologies.
 	
 	
 	<h2>Our Research Subgroups</h2>
@@ -71,9 +69,10 @@ include($headerInc);
     	</div>
 	</div>
 	</div>
+                
 	</p>
-	<p style="margin-bottom: 0cm"><a href="#top"></a></p>
-
+	
+	<div class="content">
 	<h2> News</h2>
 
 	<ul> 
@@ -84,6 +83,9 @@ include($headerInc);
 
 </div>
 
+
+
+<br/><br/><br/>
 
 <!-- JavaScripts -->
 <script type="text/javascript" src="<?php echo $buttonsJs;?>"></script>
