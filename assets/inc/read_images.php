@@ -1,7 +1,7 @@
 
 <?php
 // Set the directory path for the images
-$imageDir = '../../figures/test_images';
+$imageDir = '../../figures/group_members';
 
 // Scan the directory for all files
 $files = scandir($imageDir);

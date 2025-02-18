@@ -17,6 +17,7 @@ include($headerInc);
 </head>
 
 <body lang="en-US" dir="ltr">
+<div class = "sub-body">
 <br/>
 	<h1 class="western">Welcome to the High Energy  Group</h1> 
 
@@ -35,10 +36,10 @@ include($headerInc);
 		imageElement.href = "https://en.wikipedia.org/wiki/Cat";
 
 		const img = document.createElement('img');
-		img.src = `./figures/test_images/${image}`;
+		img.src = `./figures/group_members/${image}`;
 		img.alt = image;
-		img.style.width = '50px';  // Set the desired width for the image
-      	img.style.height = '50px'; // If you want to set the height too
+		img.style.width = '80px';  // Set the desired width for the image
+      	img.style.height = '100px'; // If you want to set the height too
      	 img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
 
 
@@ -57,8 +58,7 @@ include($headerInc);
                 the Mu3e experiment at PSI and the development of new high resolution Silicon detector technologies.
 	
 	
-	<h2>Our Research Subgroups</h2>
-
+	<h2 style="text-align: center;">Our Research Subgroups</h2>
 	<div class ="dropdown-container">
 	<div class="dropdown">
     <button class="dropdown-btn">Mu3e</button>
@@ -86,8 +86,12 @@ include($headerInc);
 	<h2> News</h2>
 
 	<ul> 
-		<li> We are building our fancy new website that would be better than than every website of all other lousy groups. </li>
-		<li> News 2 </li>
+		<li> We are building a new website for our group!!</li>
+		<video width="400" height="200" controls>
+    		<source src="./figures/hackaton.MOV" type="video/quicktime">
+    		Your browser does not support the video tag.
+		</video>
+
 
 	</ul>
 
@@ -99,7 +103,7 @@ include($headerInc);
 
 <!-- JavaScripts -->
 <script type="text/javascript" src="<?php echo $buttonsJs;?>"></script>
-
+</div>
 </body>
 
 </html>
