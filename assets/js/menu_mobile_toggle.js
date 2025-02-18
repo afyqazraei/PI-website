@@ -3,6 +3,11 @@ function toggleMenu() {
     menu.classList.toggle("active");
 }
 
+function toggleMenu_pub() {
+    const menu_pub = document.querySelector(".menu-pub");
+    menu_pub.classList.toggle("active");
+}
+
 // Mobile dropdown menu toggle
 document.addEventListener("DOMContentLoaded", function () {
     const dropdowns = document.querySelectorAll(".dropdown > a");
@@ -19,10 +24,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     item.querySelector(".dropdown-menu").style.maxHeight = "0";
                 }
             });
+        
 
             // Toggle the clicked dropdown's visibility
             const dropdownMenu = parent.querySelector(".dropdown-menu");
-            dropdownMenu.style.maxHeight = dropdownMenu.style.maxHeight === "500px" ? "0" : "500px"; // Toggle max-height for animation
+
+            if (dropdownMenu) {
+                dropdownMenu.style.maxHeight = dropdownMenu.style.maxHeight === "500px" ? "0" : "500px"; // Toggle max-height for animation
+            }
+
             parent.classList.toggle("active");
         });
     });

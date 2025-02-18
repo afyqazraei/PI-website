@@ -18,13 +18,17 @@ include($headerInc);
 </head>
 <body lang="en-US" dir="ltr" style="text-align:left;">
     <div class="sub-body">
-    <script type="text/javascript" src="<?php echo $menu_mobile_toggleJs;?>"></script>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-pub" onclick="toggleMenu_pub()">☰</button>
         <ul class="menu-pub">
             <li><a href="#journal-publications">Journal Publications</a></li>
             <li><a href="#preprints-proceedings-pubnotes">Pre-prints, Proceedings and Pub Notes</a></li>
             <li><a href="#conference-invited-talks">Conference and Invited Talks</a></li>
             <li><a href="#posters">Posters</a></li>
         </ul>
+
+        <script type="text/javascript" src="<?php echo $menu_mobile_toggleJs;?>"></script>
+
         <h1 id="journal-publications" style="text-align:left">Journal Publications </h1>
         <h3>(with significant contributions from members of our group)</h3>
         <h2>2024</h2>
