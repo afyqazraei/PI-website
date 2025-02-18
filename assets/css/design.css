@@ -56,8 +56,27 @@ li {
     width: 60vw;
     z-index: 1;
     overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    float: left; /* Light red */
+    padding: 0px 0;
+    margin: 2%;
+    text-align: left;
+    font-size: 16px;
 }
-
+.dropdown-content-right {
+    display: none;
+    position: absolute; /* Position the dropdown relative to the page */
+    background-color: var(--PI-sand);
+    top: 80px; /* Position the dropdown below the button */
+    left: calc(-1 * var(--dropdown-left) + 20vw); /* Set the horizontal offset to be -dropdown-left */
+    height: calc(var(--dropdown-bot) + 30px);
+    width: 60vw;
+    z-index: 1;
+    overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    float: right; /* Light red */
+    padding: 0px 0;
+    margin: 2%;
+    text-align: right; 
+}
 
 /* Text in the dropdow */
 .dropdown-content a {
