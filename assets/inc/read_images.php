@@ -8,7 +8,7 @@ $files = scandir($imageDir);
 
 // Filter out non-image files (you can add more image extensions if needed)
 $imageFiles = array_filter($files, function($file) {
-    return preg_match('/\.(jpg|jpeg|png|gif)$/i', $file);
+    return preg_match('/\.(jpg|jpeg|png|gif|JPG)$/i', $file);
 });
 
 // Send the list of image files as a JSON response
