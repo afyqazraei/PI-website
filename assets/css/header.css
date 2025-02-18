@@ -1,90 +1,70 @@
 /* Base styles */
 .tab-bar {
-    background-color: #b5152b;  /* Light red */
+    background-color: #b5152b;
     padding: 14px 20px;
-    display: flex;  
-    align-items: center;  
-    justify-content: space-between;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+/* Logo */
 .logo img {
-    height: 50px; /* Adjust as needed */
+    height: 60px;
     width: auto;
 }
 
-/* Ensure menu stays evenly spaced */
-.tab-bar ul {
+/* Menu */
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: flex-end;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 }
 
-/* Make sure items are evenly spaced and centered */
-.tab-bar ul li {
+/* Menu items */
+.menu li {
     position: relative;
+    padding: 10px 20px;
+    /*display: inline-block;*/
+    align-items: center;
     white-space: nowrap;
-    padding: 10px 20px; /* Ensure even spacing around text */
-    display: inline-block;  
-    align-items: center;  /* Center the text vertically */
 }
 
-/* Add vertical separators */
-.tab-bar ul li:not(:last-child)::after {
+/* Vertical separators */
+.menu li:not(:last-child)::after {
     content: "";
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    height: 60%; /* Adjust line height */
+    height: 60%;
     width: 2px;
-    background-color: #ffadad; /* Dark red vertical separator */
+    background-color: #ffadad;
 }
 
-/* Navigation links */
-.tab-bar ul li a {
-    text-decoration: none;
-    color: #ffffff; /* White text */
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-    font-size: 16pt;
-}
-
-.tab-bar ul li a:hover {
-    color: #ffadad; /* Light red hover effect */
-}
-
-/* Ensure dropdown is hidden by default */
+/* Dropdown */
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #b5152b; /* Light red dropdown */
-    border: 2px solid #ffffff; /* White border */
+    background-color: #860000; /* Light red dropdown */
+    border: 2px solid #ffffff;
     list-style: none;
     padding: 0;
     margin: 0;
     top: 100%;
-    left: 0;
+    left: 0; /* Default position */
     min-width: 180px;
-    z-index: auto;
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Add horizontal lines between dropdown items */
-.dropdown-menu li {
-    padding: 8px;
-    text-align: left;
-    width: auto;
-    border-bottom: 2px solid #ffadad; /* Dark red horizontal line */
-}
-
-/* Remove border from last dropdown item */
-.dropdown-menu li:last-child {
-    border-bottom: none;
+/* Ensure rightmost dropdown stays inside the page */
+.dropdown:last-child .dropdown-menu {
+    left: auto;
+    right: 0;
 }
 
 /* Show dropdown on hover */
@@ -92,4 +72,124 @@
     display: block;
     visibility: visible;
     opacity: 1;
+}
+
+/* 🟢 RESPONSIVE DESIGN: Hides menu & shows hamburger */
+.hamburger {
+    display: none;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 968px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #860000;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu li {
+        text-align: left;
+        width: 100%;
+        border-bottom: 2px solid #b5152b;
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: static; /* Ensures dropdown appears below */
+        background-color: #b5152b; /* Light red */
+        border: 2px solid #b5152b;
+        width: 100%;
+        padding: 0px 0;
+        text-align: left;
+        border-top: 2px solid #860000;
+        max-height: none;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    /* Expand dropdown when active */
+    .dropdown.active .dropdown-menu {
+        display: block;
+        max-height: 500px; /* Large enough to fit content */
+        z-index: 1010;
+    }
+
+    .dropdown-menu li {
+        padding: 10px;
+        border-bottom: 2px solid #860000;
+    }
+
+    .dropdown-menu li:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Desktop dropdown styling (opens on hover) */
+@media (min-width: 969px) {
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #860000;
+        border: 2px solid #ffffff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        top: 100%;
+        left: 0;
+        min-width: 180px;
+        z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+    /* Ensure the dropdowns are horizontal on desktop */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: auto;
+        min-width: auto;  /* Default width */
+        width: auto; /* This ensures the dropdown is not forced to fill the entire screen */
+    }
+
+    .dropdown-menu li {
+        padding: 10px 15px;
+        display: inline-block; /* This makes the dropdown horizontal */
+    }
+}
+
+/* Style the links inside the menu */
+.menu li a {
+    text-decoration: none; /* Removes underline */
+    color: #ffffff; /* White text */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Change color on hover */
+.menu li a:hover {
+    color: #ffadad; /* Light red hover effect */
 }
