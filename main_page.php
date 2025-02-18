@@ -21,25 +21,35 @@ include($headerInc);
 	<h1 class="western">Welcome to the High Energy  Group</h1> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
-	<div class="row" style="text-align: center;">
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.987.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.988.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.989.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.990.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.99.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.997.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="./figures/test_images/cat.984.jpg" width="100" height="100" style="object-fit: cover;"></a>
-		<a href="https://en.wikipedia.org/wiki/Cat"><img src="figures/test_images/cat.985.jpg" width="100" height="100" style="object-fit: cover;"></a>
-	</div>
-		
+	<div class="row" style="text-align: center;" id="image-container"></div>
+
+<script>
+  // Fetch the list of images from the PHP script
+  fetch('./assets/inc/read_images.php')	
+	.then(response => response.json())
+	.then(images => {
+	  const container = document.getElementById('image-container');
+
+	  images.forEach(image => {
+		const imageElement = document.createElement('a');
+		imageElement.href = "https://en.wikipedia.org/wiki/Cat";
+
+		const img = document.createElement('img');
+		img.src = `./figures/test_images/${image}`;
+		img.alt = image;
+		img.style.width = '50px';  // Set the desired width for the image
+      	img.style.height = '50px'; // If you want to set the height too
+     	 img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
+
+
+		imageElement.appendChild(img);
+		container.appendChild(imageElement);
+	  });
+	})
+	.catch(err => console.error('Error loading images:', err));
+	</script>
+
+
 	<p style="margin-bottom: 0cm">
 	Our group is involved in several research projects in the field of experimental particle physics,
                 with a focus on the study of fundamental particles and their interactions.

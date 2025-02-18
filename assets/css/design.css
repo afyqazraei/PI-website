@@ -51,6 +51,7 @@ li {
     background-color: var(--PI-sand);
     top: 80px; /* Position the dropdown below the button */
     left: calc(-1 * var(--dropdown-left) + 20vw); /* Set the horizontal offset to be -dropdown-left */
+    height: calc(var(--dropdown-bot) + 30px);
     width: 60vw;
     z-index: 1;
     overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
@@ -79,3 +80,16 @@ li {
     width: 33%; 
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
+
+.content{
+    margin-top: calc(var(--dropdown-bot) + 90px);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .row a {
+    margin: 10px;
+  }
