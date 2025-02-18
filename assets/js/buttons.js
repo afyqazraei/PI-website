@@ -6,6 +6,7 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
         // Get dynamic coordinates of the dropdown button to place the dropdown menu
         const rect = button.getBoundingClientRect();
         document.documentElement.style.setProperty('--dropdown-left', `${rect.left}px`); 
+        document.documentElement.style.setProperty('--dropdown-right', `${rect.right}px`); 
         
         // Toggle visibility of the dropdown
         if (dropdownContent.style.display === 'block') {
