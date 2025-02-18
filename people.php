@@ -22,38 +22,70 @@ include($headerInc);
 
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         <h1 class="western">Group Members</h1> 
+
         <h2 class="western">Professor</h2> 
-        <ul> 
-            <li>Prof. Dr. André Schöning</li>
-        </ul>
+        <div class="member">
+            <img src="prof_schoning.jpg" alt="Prof. Dr. André Schöning">
+            <div class="member-info">
+                <h3>Prof. Dr. André Schöning</h3>
+                <p>Email: <a href="mailto:schoning@physi.uni-heidelberg.de">schoning@physi.uni-heidelberg.de</a></p>
+                <p>Room: 101</p>
+                <p>Phone: +49 123 456 789</p>
+            </div>
+        </div>
+
         <h2 class="western">PostDocs</h2> 
-        <ul> 
-            <li>Tamasi Kar</li>
-            <li>Heiko Augustin</li>
-            <li>Sebastian Dittmeier</li>
-            <li>...</li>
-        </ul>
+        <div class="member">
+            <img src="tamasi_kar.jpg" alt="Dr. Tamasi Kar">
+            <div class="member-info">
+                <h3>Tamasi Kar</h3>
+                <p>Email: <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></p>
+                <p>Room: 102</p>
+                <p>Phone: +49 123 456 790</p>
+            </div>
+        </div>
+
+        <div class="member">
+            <img src="heiko_augustin.jpg" alt="Dr. Heiko Augustin">
+            <div class="member-info">
+                <h3>Heiko Augustin</h3>
+                <p>Email: <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></p>
+                <p>Room: 103</p>
+                <p>Phone: +49 123 456 791</p>
+            </div>
+        </div>
+
         <h2 class="western">PhD Students</h2> 
-        <ul> 
-            <li>Joachim Zinßer</li>
-            <li>David immig</li>
-            <li>Giulia Fazzino</li>
-            <li>Afiq (Joey) Azrei</li>
-            <li>Abhirikshma Nandi</li>
-            <li>...</li>
-        </ul>
+        <div class="member">
+            <img src="joachim_zinsser.jpg" alt="Joachim Zinßer">
+            <div class="member-info">
+                <h3>Joachim Zinßer</h3>
+                <p>Email: <a href="mailto:zinsser@physi.uni-heidelberg.de">zinsser@physi.uni-heidelberg.de</a></p>
+                <p>Room: 201</p>
+                <p>Phone: +49 123 456 792</p>
+            </div>
+        </div>
+
         <h2 class="western">Master Students</h2> 
-        <ul> 
-            <li>Effrosyni Zachou</li>
-            <li>Kadir Tastepe</li>
-            <li>David Fritz</li>
-            <li>...</li>
-        </ul>
+        <div class="member">
+            <img src="effrosyni_zachou.jpg" alt="Effrosyni Zachou">
+            <div class="member-info">
+                <h3>Effrosyni Zachou</h3>
+                <p>Email: <a href="mailto:zachou@example.com">zachou@example.com</a></p>
+                <p>Room: 301</p>
+                <p>Phone: +49 123 456 793</p>
+            </div>
+        </div>
         <h2 class="western">Bachelor Students</h2> 
-        <ul> 
-            <li>Jan-Willem Holtherm</li>
-            <li>...</li>
-        </ul>
+        <div class="member">
+            <img src="effrosyni_zachou.jpg" alt="Effrosyni Zachou">
+            <div class="member-info">
+                <h3>Effrosyni Zachou</h3>
+                <p>Email: <a href="mailto:zachou@example.com">zachou@example.com</a></p>
+                <p>Room: 301</p>
+                <p>Phone: +49 123 456 793</p>
+            </div>
+        </div>
 <!-- ++++++++++++++++++++ End Main Content of the page here! +++++++++++++++++++++ -->
 
 
