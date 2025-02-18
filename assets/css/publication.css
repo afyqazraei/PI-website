@@ -1,0 +1,196 @@
+/* Base styles */
+.tab-bar {
+    background-color: #b5152b;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
+/* menu-pub */
+.menu-pub {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+/* menu-pub items */
+.menu-pub li {
+    position: relative;
+    padding: 10px 20px;
+    /*display: inline-block;*/
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Vertical separators */
+.menu-pub li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    width: 2px;
+    background-color: #ffadad;
+}
+
+/* Dropdown */
+.dropdown-menu-pub {
+    display: none;
+    position: absolute;
+    background-color: #860000; /* Light red dropdown */
+    border: 2px solid #ffffff;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0; /* Default position */
+    min-width: 180px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Ensure rightmost dropdown stays inside the page */
+.dropdown:last-child .dropdown-menu-pub {
+    left: auto;
+    right: 0;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu-pub {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 🟢 RESPONSIVE DESIGN: Hides menu-pub & shows hamburger */
+.hamburger {
+    display: none;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 968px) {
+    .menu-pub {
+        display: none;
+        flex-direction: column;
+        background-color: #860000;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .menu-pub.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .menu-pub li {
+        text-align: left;
+        width: 100%;
+        border-bottom: 2px solid #b5152b;
+    }
+
+    .dropdown-menu-pub {
+        display: none;
+        position: static; /* Ensures dropdown appears below */
+        background-color: #b5152b; /* Light red */
+        border: 2px solid #b5152b;
+        width: 100%;
+        padding: 0px 0;
+        text-align: left;
+        border-top: 2px solid #860000;
+        max-height: none;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    /* Expand dropdown when active */
+    .dropdown.active .dropdown-menu-pub {
+        display: block;
+        max-height: 500px; /* Large enough to fit content */
+        z-index: 1010;
+    }
+
+    .dropdown-menu-pub li {
+        padding: 10px;
+        border-bottom: 2px solid #860000;
+    }
+
+    .dropdown-menu-pub li:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Desktop dropdown styling (opens on hover) */
+@media (min-width: 969px) {
+    .dropdown-menu-pub {
+        display: none;
+        position: absolute;
+        background-color: #860000;
+        border: 2px solid #ffffff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        top: 100%;
+        left: 0;
+        min-width: 180px;
+        z-index: 1000;
+    }
+
+    .dropdown:hover .dropdown-menu-pub {
+        display: block;
+    }
+
+    /* Ensure the dropdowns are horizontal on desktop */
+    .dropdown-menu-pub {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: auto;
+        min-width: auto;  /* Default width */
+        width: auto; /* This ensures the dropdown is not forced to fill the entire screen */
+    }
+
+    .dropdown-menu-pub li {
+        padding: 10px 15px;
+        display: inline-block; /* This makes the dropdown horizontal */
+    }
+}
+
+/* Style the links inside the menu-pub */
+.menu-pub li a {
+    text-decoration: none; /* Removes underline */
+    color: #000000; /* White text */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Change color on hover */
+.menu-pub li a:hover {
+    color: var(--PI-darkred);
+    /* Light red hover effect */
+}
