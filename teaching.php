@@ -22,6 +22,10 @@ include($headerInc);
 
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         <h1 class="western">Teaching</h1> 
+        <h2 class="westers">Courses by Prof André Schöning</h2>
+        <iframe src="https://www.physi.uni-heidelberg.de/~schoning/Vorlesungen/" width="1000" height="800"></iframe>
+        
+        <h2 class="western">Courses taught by other members of the group</h2>
         <h2 class="western">Winter Semester 2024 - 2025</h2> 
         <ul> 
             <li>We are building our fancy new website that would be better than every website of all other lousy groups.</li>
