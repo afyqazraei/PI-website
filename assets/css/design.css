@@ -100,7 +100,7 @@ h1 {
 }
 h2 {
     text-align: left; /* Aligns semester titles to the left */
-    margin-left: 20px; /* Ensures no unintended margin */
+    margin-left: 0px; /* Ensures no unintended margin */
 }
 
 .row {
@@ -132,6 +132,16 @@ h2 {
 
 .member-info {
     flex: 1; /* Allows text to take the remaining space */
+}
+
+a {
+    color: #b5152b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #860000; /* Darker red when hovered */
+    text-decoration: underline; /* Optional: Add underline back on hover */
 }
 
 .member-info h3 {
