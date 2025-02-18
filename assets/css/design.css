@@ -52,6 +52,7 @@ li {
     background-color: var(--PI-sand);
     top: 80px; /* Position the dropdown below the button */
     left: calc(-1 * var(--dropdown-left) + 20vw); /* Set the horizontal offset to be -dropdown-left */
+    height: calc(var(--dropdown-bot) + 30px);
     width: 60vw;
     z-index: 1;
     overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
@@ -99,3 +100,15 @@ h2 {
     text-align: left; /* Aligns semester titles to the left */
     margin-left: 20px; /* Ensures no unintended margin */
 }
+.content{
+    margin-top: calc(var(--dropdown-bot) + 90px);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .row a {
+    margin: 10px;
+  }
