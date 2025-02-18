@@ -21,16 +21,16 @@ include($headerInc);
 
 
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
-        <h1 class="western">Teaching</h1> 
-        <h2 class="western">Winter Semester 2024 - 2025</h2> 
+        <h1 class="western">Main Heading</h1> 
+        <h2 class="western">Sub Heading</h2> 
         <ul> 
-            <li>We are building our fancy new website that would be better than every website of all other lousy groups.</li>
-            <li>News 2</li>
+            <li>Text 1</li>
+            <li>Text 2</li>
         </ul>
-        <h2 class="western">Summer Semester 2024</h2> 
+        <h2 class="western">Sub Heading</h2> 
         <ul> 
-            <li>We are building our fancy new website that would be better than every website of all other lousy groups.</li>
-            <li>News 2</li>
+            <li>Text 1</li>
+            <li>Text 2</li>
         </ul>
 <!-- ++++++++++++++++++++ End Main Content of the page here! +++++++++++++++++++++ -->
 

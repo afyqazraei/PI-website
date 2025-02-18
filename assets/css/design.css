@@ -15,6 +15,7 @@ body {
     margin: auto;
     text-align: center;
     box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -78,4 +79,23 @@ li {
     border-radius: 5px;
     width: 33%; 
     box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.sub-body {
+    width: 70%; /* Adjust width as needed */
+    max-width: 1500px; /* Prevents it from getting too wide */
+    background-color: white; /* Makes it stand out from body */
+    margin: auto; /* Centers it */
+    padding: 20px;
+    border-radius: 10px; /* Rounded edges for a nicer look */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+    text-align: left; /* Keeps text left-aligned */
+}
+
+h1 {
+    text-align: center; /* Centers Teaching */
+}
+h2 {
+    text-align: left; /* Aligns semester titles to the left */
+    margin-left: 20px; /* Ensures no unintended margin */
 }
