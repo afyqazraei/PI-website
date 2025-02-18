@@ -29,8 +29,9 @@ include($headerInc);
 
         <script type="text/javascript" src="<?php echo $menu_mobile_toggleJs;?>"></script>
 
-        <h1 id="journal-publications" style="text-align:left">Journal Publications </h1>
-        <h3>(with significant contributions from members of our group)</h3>
+<!--------------------------------journal-publications------------------------------------------------------>
+        <h1 id="journal-publications" style="text-align:left; margin-bottom:0;">Journal Publications </h1>
+        <h3 style="margin-top: 0.5%;">(with significant contributions from members of our group)</h3>
         <h2>2024</h2>
         <ul class="pubs">
 
@@ -301,10 +302,10 @@ include($headerInc);
         </li>
 
         </ul>
+        <br/>
 
-
-
-        <h1 id="preprints-proceedings-pubnotes">Pre-prints, Proceedings, Conference and Pub Notes</h1>
+<!--------------------------------preprints-proceedings-pubnotes------------------------------------------------------>
+        <h1 id="preprints-proceedings-pubnotes"style="text-align:left; margin-bottom: 0;">Pre-prints, Proceedings, Conference and Pub Notes</h1>
 
         <h2>2023</h2>
         <ul class="pubs">
@@ -573,9 +574,10 @@ include($headerInc);
         </li>
 
         </ul>
+        <br/>
 
-
-        <h1 id="conference-invited-talks">Conference and Invited Talks</h1>
+<!--------------------------------conference-invited-talks------------------------------------------------------>
+        <h1 id="conference-invited-talks"style="text-align:left; margin-bottom: 0;">Conference and Invited Talks</h1>
 
         <h2>2024</h2>
         <ul class="pubs">
@@ -877,10 +879,9 @@ include($headerInc);
 
 
         </ul>
-
-
-
-        <h1 id="posters">Poster</h1>
+        <br/>
+<!--------------------------------posters------------------------------------------------------>
+        <h1 id="posters"style="text-align:left; margin-bottom: 0;">Posters</h1>
 
         <h2>2024</h2>
         <ul class="pubs"> <!-- unnumbered list -->
