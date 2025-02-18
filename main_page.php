@@ -19,24 +19,29 @@ include($headerInc);
 <body lang="en-US" dir="ltr">
 <div class = "sub-body">
 <br/>
-	<h1 class="western">Welcome to the High Energy  Group</h1> 
+	<h1 class="western">Welcome to Prof. Schoening's High Energy  Group</h1> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
 	<div class="row" style="text-align: center;" id="image-container"></div>
 
 <script>
   // Fetch the list of images from the PHP script
-  fetch('./assets/inc/read_images.php')	
+  fetch("<?php echo dirname($subpath);?>/assets/inc/read_images.php")	
 	.then(response => response.json())
 	.then(images => {
 	  const container = document.getElementById('image-container');
+	  container.style.marginLeft = '20%';
+	  container.style.marginRight = '20%';
 
 	  images.forEach(image => {
 		const imageElement = document.createElement('a');
-		imageElement.href = "https://en.wikipedia.org/wiki/Cat";
+		imageElement.href = "<?php echo dirname($subpath);?>/people.php";
+		imageElement.style.marginLeft = '3px'; // Add space on the left of each image
+		imageElement.style.marginRight = '3px'; // Add space on the right of each image
+
 
 		const img = document.createElement('img');
-		img.src = `./figures/group_members/${image}`;
+		img.src = `<?php echo dirname($subpath);?>/figures/group_members/${image}`;
 		img.alt = image;
 		img.style.width = '80px';  // Set the desired width for the image
       	img.style.height = '100px'; // If you want to set the height too
@@ -59,7 +64,7 @@ include($headerInc);
 	
 	
 	<h2 style="text-align: center;">Our Research Subgroups</h2>
-	<div class ="dropdown-container">
+	<div class ="dropdown-container", style="text-align: center;">
 	<div class="dropdown">
     <button class="dropdown-btn">Mu3e</button>
     	<div class="dropdown-content">
@@ -86,9 +91,9 @@ include($headerInc);
 	<h2> News</h2>
 
 	<ul> 
-		<li> We are building a new website for our group!!</li>
-		<video width="400" height="200" controls>
-    		<source src="./figures/hackaton.MOV" type="video/quicktime">
+		<li> Our group members had two hackaton days to create this new website!</li>
+		<video width="400" height="200" controls autoplay muted loop>
+    		<source src="<?php echo dirname($subpath);?>/figures/hackaton.MOV">
     		Your browser does not support the video tag.
 		</video>
 

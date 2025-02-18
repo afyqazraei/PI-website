@@ -100,7 +100,6 @@ h2 {
     text-align: left; /* Aligns semester titles to the left */
     margin-left: 20px; /* Ensures no unintended margin */
 }
-
 .content{
     margin-top: calc(var(--dropdown-bot) + 90px);
 }
