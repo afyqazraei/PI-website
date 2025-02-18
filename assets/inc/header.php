@@ -22,7 +22,14 @@
 
         <ul class="menu">
             <li><a href="<?php echo dirname($subpath);?>/main_page.php">Home</a></li>
-            <li><a href="<?php echo dirname($subpath);?>/research.php">Research</a></li>
+            <li class="dropdown">
+                <a href="#">Research</a>
+                <ul class="dropdown-menu">
+                    <li><a href="<?php echo dirname($subpath);?>/research/mu3e/mu3e_mainpage.php">Mu3e</a></li>
+                    <li><a href="<?php echo dirname($subpath);?>/research/ATLAS/ATLAS_mainpage.php">ATLAS</a></li>
+                    <li><a href="<?php echo dirname($subpath);?>/research/HV-Maps/HV-Maps_mainpage.php">HV-MAPS</a></li>
+                </ul>
+            </li>
             <li class="dropdown">
                 <a href="#">Publications</a>
                 <ul class="dropdown-menu">
