@@ -13,6 +13,7 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
         });
         // Get dynamic coordinates of the dropdown button to place the dropdown menu
         const rect = button.getBoundingClientRect();
+        const scrollOffset = window.scrollY || window.pageYOffset; 
         
         // Toggle visibility of the dropdown
         if (dropdownContent.style.display === 'block') {
@@ -22,8 +23,9 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
 
         } else {
             dropdownContent.style.display = 'block';
-            document.documentElement.style.setProperty('--dropdown-bot', `${rect.bottom}px`);
+            document.documentElement.style.setProperty('--dropdown-bot', `${rect.bottom}px + scrollOffset`);
             document.documentElement.style.setProperty('--dropdown-left', `${rect.left}px`);  
+            
         }
         event.stopPropagation();
     });
@@ -46,8 +48,21 @@ window.addEventListener('resize', function() {
         let dropdownContent = button.nextElementSibling;
         if (dropdownContent.style.display === 'block') { // Recalculate positions if the dropdown is open
             const rect = button.getBoundingClientRect();
-            document.documentElement.style.setProperty('--dropdown-bot', `${rect.bottom}px`);
+            const scrollOffset = window.scrollY || window.pageYOffset;  // Get current scroll position
+
+            document.documentElement.style.setProperty('--dropdown-bot', `${rect.bottom}px + window.scrollY`);
             document.documentElement.style.setProperty('--dropdown-left', `${rect.left}px`); 
         }
     });
 });
+
+// window.addEventListener('scroll', function() {
+//     document.querySelectorAll('.dropdown-btn').forEach(button => {
+//         let dropdownContent = button.nextElementSibling;
+//         if (dropdownContent.style.display === 'block') {
+//             const rect = button.getBoundingClientRect();
+//             document.documentElement.style.setProperty('--dropdown-bot', `${rect.bottom}px`);
+//         }
+//     });
+// });
+// // Change the coordinates dynamically when the window is resized
