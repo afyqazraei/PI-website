@@ -1,6 +1,6 @@
 <?php
-$subpath = $_SERVER['REQUEST_URI'];
-$incpath = "assets/inc";
+$subpath = dirname(dirname($_SERVER['REQUEST_URI']));
+$incpath = "../../assets/inc";
 include($incpath . "/config.php");
 include($headerInc);
 ?>
