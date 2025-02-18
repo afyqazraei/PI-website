@@ -44,6 +44,7 @@ include($headerInc);
         </ul>
         <h2 class="western">Master Students</h2> 
         <ul> 
+            <li>Effrosyni Zachou</li>
             <li>Kadir Tastepe</li>
             <li>David Fritz</li>
             <li>...</li>
