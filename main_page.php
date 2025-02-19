@@ -56,7 +56,7 @@ include($headerInc);
 	</script>
 
 
-	<p style="margin-bottom: 0cm">
+	<p style="margin-bottom: 0cm; text-align:center;">
 	Our group is involved in several research projects in the field of experimental particle physics,
                 with a focus on the study of fundamental particles and their interactions.
                 This includes the participation in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
