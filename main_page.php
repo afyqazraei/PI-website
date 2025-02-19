@@ -122,7 +122,7 @@ include($headerInc);
 
 	<ul> 
 		<li> Our group members had two hackaton days to create this new website!</li>
-		<video width="400" height="200" controls autoplay muted loop>
+		<video width="300" height=auto controls autoplay muted loop>
     		<source src="<?php echo dirname($subpath);?>/figures/hackaton.MOV">
     		Your browser does not support the video tag.
 		</video>

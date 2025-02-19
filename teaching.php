@@ -34,7 +34,8 @@ include($headerInc);
             $content = preg_replace('/.*?<h1>Prof\. Dr\. Andre Sch&ouml;ning<\/h1>/s', '', $content);
 
             $content = preg_replace('/.<h2>Vorlesungen und Lehrveranstaltungen<\/h2>/s', '<h3>Lectures and Seminars</h3>', $content);
-            $content = preg_replace('/.<h2>frühere Vorlesungen und Lehrveranstaltungen<\/h2>/s', '<h3>earlier Lectures</h3>', $content);
+            $content = preg_replace('/.<h2>frühere Vorlesungen und Lehrveranstaltungen<\/h2>/s', '<h3>Previous Lectures</h3>', $content);
+            $content = preg_replace('/.<table border="1" style="border-collapse: collapse" bordercolor="#000"  cellpadding="5" cellspacing="0">/s', '<table border="0" style="border-collapse: collapse" bordercolor="#000"  cellpadding="4" cellspacing="0">', $content);
 
             // Remove everything after the footer (closing body, scripts, additional HTML)
             $content = preg_replace('/<\/body>.*<\/html>/s', '</body></html>', $content);
