@@ -19,7 +19,7 @@ include($headerInc);
 <body lang="en-US" dir="ltr">
 <div class = "sub-body">
 <br/>
-	<h1 class="western" style="text-align: center;">Welcome to Prof. Schoening's High Energy  Group</h1> 
+	<h1 class="western" style="text-align: center;">Welcome to Prof. Schöning's High Energy  Group</h1> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
 	<div class="row" style="text-align: center;" id="image-container"></div>
@@ -70,7 +70,7 @@ include($headerInc);
     	<div class="dropdown-content">
 		<a href="https://www.physi.uni-heidelberg.de/Forschung/he/mu3e/">
 			<div style="display: flex; justify-content: space-between;">
-				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:40%">
+				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:200px;height:auto">
 				<p style="text-align: right; width: 55%;">
 					Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 					The goal is to search for the anti-muon decay into two positrons and one electron. 

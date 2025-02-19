@@ -40,13 +40,7 @@
             </li>
             <li><a href="<?php echo dirname($subpath);?>/teaching.php">Teaching</a></li>
             <li><a href="<?php echo dirname($subpath);?>/people.php">People</a></li>
-            <li class="dropdown">
-                <a href="#">Open Positions</a>
-                <ul class="dropdown-menu">
-                    <li><a href="https://www.physi.uni-heidelberg.de/Jobs/jobs.php">Bachelor & Master Theses</a></li>
-                    <li><a href="https://www.physi.uni-heidelberg.de/Jobs/jobs.php">PhD & PostDoc Positions</a></li>
-                </ul>
-            </li>
+            <li><a href="<?php echo dirname($subpath);?>/positions.php">Theses Opportunities</a></li>
         </ul>
     </nav>
 </header>
