@@ -51,9 +51,10 @@ li {
     position: absolute; /* Position the dropdown relative to the page */
     background-color: var(--PI-sand);
     top: 80px; /* Position the dropdown below the button */
-    left: calc(-1 * var(--dropdown-left) + 20vw); /* Set the horizontal offset to be -dropdown-left */
+    left: calc(-1 * var(--dropdown-left) + 18.225vw); /* Set the horizontal offset to be -dropdown-left */
     height: 400px; 
-    width: 60vw;
+    width: 63.55vw;
+    max-width: 1355px; /* Prevents it from getting too wide */
     z-index: 1;
     border: 2px solid var(--PI-darkred);
     border-radius: 5px;
@@ -122,6 +123,40 @@ li {
         border-radius: 5px;
         width: 33%; 
         box-sizing: border-box; /* Ensure padding and border are included in the width */
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute; /* Position the dropdown relative to the page */
+        background-color: var(--PI-sand);
+        top: 76px; /* Position the dropdown below the button */
+        left: calc(-1 * var(--dropdown-left) + 8vw); /* Set the horizontal offset to be -dropdown-left */
+        height: 400px; 
+        width: 84vw;
+        max-width: 1360px; /* Prevents it from getting too wide */
+        z-index: 1;
+        border: 2px solid var(--PI-darkred);
+        border-radius: 5px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    }
+}
+/* edge case */
+@media (min-width: 2139px) {
+    .dropdown-content {
+        display: none;
+        position: absolute; /* Position the dropdown relative to the page */
+        background-color: var(--PI-sand);
+        top: 80px; /* Position the dropdown below the button */
+        left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2);; /* Set the horizontal offset to be -dropdown-left */
+        height: 400px; 
+        width: 63.55vw;
+        max-width: 1360px; /* Prevents it from getting too wide */
+        z-index: 1;
+        border: 2px solid var(--PI-darkred);
+        border-radius: 5px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
     }
 }
 

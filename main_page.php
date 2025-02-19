@@ -19,7 +19,7 @@ include($headerInc);
 <body lang="en-US" dir="ltr">
 <div class = "sub-body">
 <br/>
-	<h1 class="western">Welcome to Prof. Schoening's High Energy  Group</h1> 
+	<h1 class="western" style="text-align: center;">Welcome to Prof. Schoening's High Energy  Group</h1> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
 	<div class="row" style="text-align: center;" id="image-container"></div>
@@ -36,16 +36,16 @@ include($headerInc);
 	  images.forEach(image => {
 		const imageElement = document.createElement('a');
 		imageElement.href = "<?php echo dirname($subpath);?>/people.php";
-		imageElement.style.marginLeft = '3px'; // Add space on the left of each image
-		imageElement.style.marginRight = '3px'; // Add space on the right of each image
+		imageElement.style.marginLeft = '2px'; // Add space on the left of each image
+		imageElement.style.marginRight = '2px'; // Add space on the right of each image
 
 
 		const img = document.createElement('img');
 		img.src = `<?php echo dirname($subpath);?>/figures/group_members/${image}`;
 		img.alt = image;
-		img.style.width = '80px';  // Set the desired width for the image
-      	img.style.height = '100px'; // If you want to set the height too
-     	 img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
+		img.style.width = '120px';  // Set the desired width for the image
+      	img.style.height = '160px'; // If you want to set the height too
+     	img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
 
 
 		imageElement.appendChild(img);
@@ -118,7 +118,7 @@ include($headerInc);
 	</p>
 	
 	<div class="content">
-	<h2> News</h2>
+	<h2 style="text-align: center;"> News</h2>
 
 	<ul> 
 		<li> Our group members had two hackaton days to create this new website!</li>
