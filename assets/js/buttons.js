@@ -67,3 +67,11 @@ window.addEventListener('resize', function() {
         }
     });
 });
+
+function updateCSSVariable() {
+    let mediaWidth = window.innerWidth;
+    document.documentElement.style.setProperty('--media-width', mediaWidth + 'px');
+}
+
+window.addEventListener('resize', updateCSSVariable);
+updateCSSVariable(); // Run once on load

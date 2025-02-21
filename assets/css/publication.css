@@ -1,0 +1,86 @@
+/* menu-pub */
+.menu-pub {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+}
+
+/* menu-pub items */
+.menu-pub li {
+    position: relative;
+    padding: 0px 0px;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Vertical separators */
+.menu-pub li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 2px;
+    background-color: #ffadad;
+}
+
+/* 🟢 RESPONSIVE DESIGN: Hides menu-pub & shows hamburger */
+.hamburger-pub {
+    display: none;
+    font-size: 35px;
+    background: none;
+    border: none;
+    color: var(--PI-darkred);
+    cursor: pointer;
+}
+
+/* Mobile dropdown adjustments */
+@media (max-width: 1268px) {
+    .menu-pub {
+        position: absolute;
+        top: 19%; /* Position the menu directly below the hamburger icon */
+        left: calc(-1 * var(--dropdown-left) + 10vw); /* Set the horizontal offset to be -dropdown-left */
+        width: 70%; /* TODO: get this from design.css sub-body class */
+        display: none; /* Initially hide the menu */
+        flex-direction: column;
+        background-color: #ffffff; /* Background color for the menu */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+        z-index: 1000; /* Ensure the menu is above other elements */
+    }
+
+    .hamburger-pub {
+        display: block;
+    }
+
+    .hamburger-pub:hover + .menu-pub,
+    .menu-pub:hover {
+        display: flex;
+    }
+
+    .menu-pub li {
+        text-align: left;
+        width: 100%;
+        border-bottom: 2px solid #b5152b;
+    }
+}
+
+/* Style the links inside the menu-pub */
+.menu-pub li a {
+    text-decoration: none; /* Removes underline */
+    color: #000000; /* White text */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Change color on hover */
+.menu-pub li a:hover {
+    color: var(--PI-darkred);
+    /* Light red hover effect */
+}

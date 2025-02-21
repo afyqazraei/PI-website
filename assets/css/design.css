@@ -20,8 +20,8 @@ body {
 
 ul {
     list-style-type: square;
-    padding-left: 50 px;
-    padding-right: 50 px;
+    padding-left: 5 px;
+    padding-right: 5 px;
     margin: 10px 0;
 }
 
@@ -51,9 +51,10 @@ li {
     position: absolute; /* Position the dropdown relative to the page */
     background-color: var(--PI-sand);
     top: 80px; /* Position the dropdown below the button */
-    left: calc(-1 * var(--dropdown-left) + 20vw); /* Set the horizontal offset to be -dropdown-left */
+    left: calc(-1 * var(--dropdown-left) + 18.225vw); /* Set the horizontal offset to be -dropdown-left */
     height: 400px; 
-    width: 60vw;
+    width: 63.55vw;
+    max-width: 1355px; /* Prevents it from getting too wide */
     z-index: 1;
     border: 2px solid var(--PI-darkred);
     border-radius: 5px;
@@ -64,7 +65,7 @@ li {
 /* Text in the dropdow */
 .dropdown-content a {
     color: black;
-    padding: 100px 120px;
+    padding: 10px 10px;
     text-decoration: none;
     display: block;
 }
@@ -84,23 +85,87 @@ li {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
-.sub-body {
-    width: 70%; /* Adjust width as needed */
-    max-width: 1500px; /* Prevents it from getting too wide */
-    background-color: white; /* Makes it stand out from body */
-    margin: auto; /* Centers it */
-    padding: 20px;
-    border-radius: 10px; /* Rounded edges for a nicer look */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-    text-align: left; /* Keeps text left-aligned */
+/* subbody width is locked to 70% on Desktop */
+@media (min-width: 969px) {
+    .sub-body {
+        width: 70%; /* Adjust width as needed */
+        max-width: 1500px; /* Prevents it from getting too wide */
+        background-color: white; /* Makes it stand out from body */
+        margin: auto; /* Centers it */
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+        text-align: left; /* Keeps text left-aligned */
+    }
+}
+
+/* Changes for Mobile */
+@media (max-width: 968px) {
+    .sub-body {
+        width: auto; /* Adjust width as needed */
+        max-width: 1500px; /* Prevents it from getting too wide */
+        background-color: white; /* Makes it stand out from body */
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+        text-align: left; /* Keeps text left-aligned */
+    }
+
+    /* Dropdown button */
+    .dropdown-btn {
+        padding: 25px;
+        font-size: 80%;
+        cursor: pointer;
+        flex: 1;
+        font-weight: bold;
+        background-color: var(--PI-sand);
+        text-align: center;
+        color: var(--PI-darkred);
+        border: 2px solid var(--PI-darkred);
+        border-radius: 5px;
+        width: 33%; 
+        box-sizing: border-box; /* Ensure padding and border are included in the width */
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute; /* Position the dropdown relative to the page */
+        background-color: var(--PI-sand);
+        top: 76px; /* Position the dropdown below the button */
+        left: calc(-1 * var(--dropdown-left) + 8vw); /* Set the horizontal offset to be -dropdown-left */
+        height: 400px; 
+        width: 84vw;
+        max-width: 1360px; /* Prevents it from getting too wide */
+        z-index: 1;
+        border: 2px solid var(--PI-darkred);
+        border-radius: 5px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    }
+}
+/* edge case */
+@media (min-width: 2139px) {
+    .dropdown-content {
+        display: none;
+        position: absolute; /* Position the dropdown relative to the page */
+        background-color: var(--PI-sand);
+        top: 80px; /* Position the dropdown below the button */
+        left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2);; /* Set the horizontal offset to be -dropdown-left */
+        height: 400px; 
+        width: 63.55vw;
+        max-width: 1360px; /* Prevents it from getting too wide */
+        z-index: 1;
+        border: 2px solid var(--PI-darkred);
+        border-radius: 5px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    }
 }
 
 h1 {
-    text-align: center; /* Centers Teaching */
+    text-align: left;
 }
 h2 {
     text-align: left; /* Aligns semester titles to the left */
-    margin-left: 20px; /* Ensures no unintended margin */
+    margin-left: 0px; /* Ensures no unintended margin */
 }
 
 .row {
@@ -132,6 +197,16 @@ h2 {
 
 .member-info {
     flex: 1; /* Allows text to take the remaining space */
+}
+
+a {
+    color: #b5152b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #860000; /* Darker red when hovered */
+    text-decoration: underline; /* Optional: Add underline back on hover */
 }
 
 .member-info h3 {
