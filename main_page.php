@@ -19,7 +19,7 @@ include($headerInc);
 <body lang="en-US" dir="ltr">
 <div class = "sub-body">
 <br/>
-	<h1 class="western">Welcome to Prof. Schoening's High Energy  Group</h1> 
+	<h1 class="western" style="text-align: center;">Welcome to Prof. Schöning's High Energy  Group</h1> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
 	<div class="row" style="text-align: center;" id="image-container"></div>
@@ -36,16 +36,16 @@ include($headerInc);
 	  images.forEach(image => {
 		const imageElement = document.createElement('a');
 		imageElement.href = "<?php echo dirname($subpath);?>/people.php";
-		imageElement.style.marginLeft = '3px'; // Add space on the left of each image
-		imageElement.style.marginRight = '3px'; // Add space on the right of each image
+		imageElement.style.marginLeft = '2px'; // Add space on the left of each image
+		imageElement.style.marginRight = '2px'; // Add space on the right of each image
 
 
 		const img = document.createElement('img');
 		img.src = `<?php echo dirname($subpath);?>/figures/group_members/${image}`;
 		img.alt = image;
-		img.style.width = '80px';  // Set the desired width for the image
-      	img.style.height = '100px'; // If you want to set the height too
-     	 img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
+		img.style.width = '120px';  // Set the desired width for the image
+      	img.style.height = '160px'; // If you want to set the height too
+     	img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
 
 
 		imageElement.appendChild(img);
@@ -56,7 +56,7 @@ include($headerInc);
 	</script>
 
 
-	<p style="margin-bottom: 0cm">
+	<p style="margin-bottom: 0cm; text-align:center;">
 	Our group is involved in several research projects in the field of experimental particle physics,
                 with a focus on the study of fundamental particles and their interactions.
                 This includes the participation in the ATLAS experiment at the Large Hadron Collider (LHC) at CERN,
@@ -70,8 +70,8 @@ include($headerInc);
     	<div class="dropdown-content">
 		<a href="https://www.physi.uni-heidelberg.de/Forschung/he/mu3e/">
 			<div style="display: flex; justify-content: space-between;">
-				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:40%">
-				<p style="text-align: right; width: 55%;">
+				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:40%; object-fit: caution;">
+				<p style="text-align: right; width: 55%;object-fit: caution;">
 					Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 					The goal is to search for the anti-muon decay into two positrons and one electron. 
 					This decay channel would violate the conservation of the Charge Lepton Flavour, which is foreseen in the Standard Model only
@@ -86,7 +86,7 @@ include($headerInc);
     	<div class="dropdown-content">
 		<a href="https://www.physi.uni-heidelberg.de/Forschung/he/ATLAS/">
 			<div style="display: flex; justify-content: space-between;">
-				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:40%">
+				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="atlas-exp" style="width:40%">
 				<p style="text-align: right; width: 55%;">
 					Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 					The goal is to search for the anti-muon decay into two positrons and one electron. 
@@ -102,7 +102,7 @@ include($headerInc);
     	<div class="dropdown-content">
 		<a href="https://www.physi.uni-heidelberg.de/Forschung/he/HVMAPS/">
 			<div style="display: flex; justify-content: space-between;">
-				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:40%">
+				<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="hvmaps-exp" style="width:40%">
 				<p style="text-align: right; width: 55%;">
 					Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 					The goal is to search for the anti-muon decay into two positrons and one electron. 
@@ -118,11 +118,11 @@ include($headerInc);
 	</p>
 	
 	<div class="content">
-	<h2> News</h2>
+	<h2 style="text-align: center;"> News</h2>
 
 	<ul> 
 		<li> Our group members had two hackaton days to create this new website!</li>
-		<video width="400" height="200" controls autoplay muted loop>
+		<video width="300" height=auto controls autoplay muted loop>
     		<source src="<?php echo dirname($subpath);?>/figures/hackaton.MOV">
     		Your browser does not support the video tag.
 		</video>
