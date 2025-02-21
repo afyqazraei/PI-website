@@ -3,8 +3,8 @@ $subpath = $_SERVER['REQUEST_URI'];
 $incpath = "assets/inc";
 include($incpath . "/config.php");
 include($headerInc);
+include("header.php.inc")
 ?>
-
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
@@ -18,78 +18,59 @@ include($headerInc);
 
 <body>
     <div class="sub-body">
-
-
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         <h1 class="western">Group Members</h1> 
+        <?php physi_maliste("gruppe2='ATLAS' OR gruppe2='ATLAS,H1' OR gruppe3='ATLAS' 
+                                                                    OR gruppe3='ATLAS,H1' OR gruppe2='H1' OR gruppe2='mu3e'
+                                                                    OR gruppe2='mu3e,H1'");
+        ?>
+        <br/>
+        <h2 class="western">Former Group Members</h2>   
 
+        <div style="width:95%; margin:auto;">
+            <h3>PhD Students</h3>
 
-        <h2 class="western">Professor</h2> 
-        <div class="member">
-            <img src="prof_schoning.jpg" alt="Prof. Dr. André Schöning">
-            <div class="member-info">
-                <h3>Prof. Dr. André Schöning</h3>
-                <p>Email: <a href="mailto:schoning@physi.uni-heidelberg.de">schoning@physi.uni-heidelberg.de</a></p>
-                <p>Room: 101</p>
-                <p>Phone: +49 123 456 789</p>
-            </div>
+            Dr. Christof Sauer (ATLAS SM, 2023)<br>
+            Dr. Marta Czurylo (ATLAS DiHiggs, 2023)<br>
+            Dr. Tamasi Kar (Triplet Track Trigger, 2020)<br>
+            Dr. Arthur Bolz (H1, 2019)<br>
+            Dr. Mathis Kolb (ATLAS Top, 2018)<br>
+            Dr. Maddalena Guilini (ATLAS Top, 2017) <br>
+            Dr. David Sosa (ATLAS Top, 2016) <br>
+            Dr. Rohin Narayan (ATLAS SM, 2014)<br>
+            Dr. Sebastian Schmitt (ATLAS SM, 2013)<br>
+            Dr. Gregor Kasieczka (ATLAS Top, 2013)<br>
+            Dr. Hayk Pirumov (H1, 2013)<br>
+            Dr. Florian Huber (H1, 2012)<br>
+        
+            <h3>Master</h3>
+            Tobias Linker (ATLAS GNN Graph Segmentation on FPGA, 2024)<br>
+            Poppy Hicks (ATLAS Tracking with GNNs, 2024)<br>
+            Sachin Gupta (ATLAS Tracking with CA, 2024)<br>
+            Christof Sauer (ATLAS QCD, 2019)<br>
+            Arthur Bolz (H1, 2015)<br>
+            Mathis Kolb (ATLAS Top, 2014)<br>
+            Sebastian Dittmeier (ATLAS 60 GHz, 2013)<br>
+            David Sosa (ATLAS Top, 2012)<br>
+
+            <h3>Bachelor</h3>
+            David Karres (Mu3e Cosmic Trigger with GNNs, 2024) <br>
+            Aleem Sheikh (Triplet Track Trigger, 2022) <br>
+            Konstantin Neureither (Mu3e Cosmic Trigger, 2020)<br>
+            Michele Blago (Triplet Track Trigger, 2015)<br>
+            Jens Petersen (ATLAS 60 GHz, 2013)<br>
+            Thomas Hugle (ATLAS 60 GHz, 2013)<br>
+            Sven Pirner (ATLAS L1TT, 2010)<br>
+            Daniel Glodeck (ATLAS L1TT, 2010)<br>
+
+            <h3>Diploma</h3>
+            Robert Weidel (ATLAS L1TT, 2011)<br>
+            Patricia Sauer (ATLAS Elektron-ID, 2011)<br>
+            Sascha Lischer (ATLAS 60 GHz, 2011)<br>
+            Arno John (ATLAS L1TT, 2011)<br>
         </div>
 
-        <h2 class="western">PostDocs</h2> 
-        <div class="member">
-            <img src="tamasi_kar.jpg" alt="Dr. Tamasi Kar">
-            <div class="member-info">
-                <h3>Tamasi Kar</h3>
-                <p>Email: <a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a></p>
-                <p>Room: 102</p>
-                <p>Phone: +49 123 456 790</p>
-            </div>
-        </div>
-
-        <div class="member">
-            <img src="heiko_augustin.jpg" alt="Dr. Heiko Augustin">
-            <div class="member-info">
-                <h3>Heiko Augustin</h3>
-                <p>Email: <a href="mailto:augustin@physi.uni-heidelberg.de">augustin@physi.uni-heidelberg.de</a></p>
-                <p>Room: 103</p>
-                <p>Phone: +49 123 456 791</p>
-            </div>
-        </div>
-
-        <h2 class="western">PhD Students</h2> 
-        <div class="member">
-            <img src="joachim_zinsser.jpg" alt="Joachim Zinßer">
-            <div class="member-info">
-                <h3>Joachim Zinßer</h3>
-                <p>Email: <a href="mailto:zinsser@physi.uni-heidelberg.de">zinsser@physi.uni-heidelberg.de</a></p>
-                <p>Room: 201</p>
-                <p>Phone: +49 123 456 792</p>
-            </div>
-        </div>
-
-        <h2 class="western">Master Students</h2> 
-        <div class="member">
-            <img src="effrosyni_zachou.jpg" alt="Effrosyni Zachou">
-            <div class="member-info">
-                <h3>Effrosyni Zachou</h3>
-                <p>Email: <a href="mailto:zachou@example.com">zachou@example.com</a></p>
-                <p>Room: 301</p>
-                <p>Phone: +49 123 456 793</p>
-            </div>
-        </div>
-        <h2 class="western">Bachelor Students</h2> 
-        <div class="member">
-            <img src="effrosyni_zachou.jpg" alt="Effrosyni Zachou">
-            <div class="member-info">
-                <h3>Effrosyni Zachou</h3>
-                <p>Email: <a href="mailto:zachou@example.com">zachou@example.com</a></p>
-                <p>Room: 301</p>
-                <p>Phone: +49 123 456 793</p>
-            </div>
-        </div>
 <!-- ++++++++++++++++++++ End Main Content of the page here! +++++++++++++++++++++ -->
-
-
     </div>
 </body>
 </html>

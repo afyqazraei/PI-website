@@ -10,6 +10,7 @@
 h1, h2, h3, h4, h5, h6 {
     color: var(--PI-darkred);
 }
+
 body {
     width: 100%;
     margin: auto;
@@ -29,13 +30,74 @@ li {
     margin-bottom: 5px;
 }
 
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: left; /* Aligns semester titles to the left */
+    margin-left: 0px; /* Ensures no unintended margin */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+.row a {
+    margin: 10px;
+}
+
+  /* Style for each member entry */
+.member {
+    display: flex;
+    align-items: center; /* Align image and text */
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Separator line */
+}
+
+.member img {
+    width: 80px; /* Adjust image size */
+    height: 80px;
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.member-info {
+    flex: 1; /* Allows text to take the remaining space */
+}
+
+a {
+    color: #b5152b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #860000; /* Darker red when hovered */
+    text-decoration: underline; /* Optional: Add underline back on hover */
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #222;
+}
+
+.member-info p {
+    margin: 3px 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
 /* Basic styling for the dropdown */
 .dropdown {
     position: relative;
     display: inline-flex;
     width: 30%;
 }
-
 
 /* Placeholder for the dropdown */
 .dropdown-placeholder {
@@ -48,10 +110,10 @@ li {
 /* Box for the dropdown */
 .dropdown-content {
     display: none;
-    position: absolute; /* Position the dropdown relative to the page */
+    position: absolute;
     background-color: var(--PI-sand);
     top: 80px; /* Position the dropdown below the button */
-    left: calc(-1 * var(--dropdown-left) + 18.225vw); /* Set the horizontal offset to be -dropdown-left */
+    left: calc(-1 * var(--dropdown-left) + 18.225vw); /* Set the horizontal offset */
     height: 400px; 
     width: 63.55vw;
     max-width: 1355px; /* Prevents it from getting too wide */
@@ -69,6 +131,7 @@ li {
     text-decoration: none;
     display: block;
 }
+
 /* Dropdown button */
 .dropdown-btn {
     padding: 25px;
@@ -83,6 +146,11 @@ li {
     border-radius: 5px;
     width: 33%; 
     box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+/* Class for elements which go below the dropdown, it pushes them down when dropdown is opened */
+.content{
+    margin-top: calc( var(--dropdown-bot) + 450px);
 }
 
 /* subbody width is locked to 70% on Desktop */
@@ -158,68 +226,4 @@ li {
         box-sizing: border-box;
         overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
     }
-}
-
-h1 {
-    text-align: left;
-}
-h2 {
-    text-align: left; /* Aligns semester titles to the left */
-    margin-left: 0px; /* Ensures no unintended margin */
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .row a {
-    margin: 10px;
-  }
-
-
-  /* Style for each member entry */
-  .member {
-    display: flex;
-    align-items: center; /* Align image and text */
-    margin-bottom: 20px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd; /* Separator line */
-}
-
-.member img {
-    width: 80px; /* Adjust image size */
-    height: 80px;
-    border-radius: 50%; /* Circular image */
-    margin-right: 20px;
-    object-fit: cover;
-}
-
-.member-info {
-    flex: 1; /* Allows text to take the remaining space */
-}
-
-a {
-    color: #b5152b;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #860000; /* Darker red when hovered */
-    text-decoration: underline; /* Optional: Add underline back on hover */
-}
-
-.member-info h3 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #222;
-}
-
-.member-info p {
-    margin: 3px 0;
-    font-size: 0.9em;
-    color: #666;
-}
-.content{
-    margin-top: calc( var(--dropdown-bot) + 450px);
 }
