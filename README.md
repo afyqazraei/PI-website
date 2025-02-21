@@ -72,6 +72,9 @@ The rest of the variables are then correctly taken care in config.php.
 - Include any new assest in the corresponding directory.
 - Do not use absolute paths/links unless necessary.
 - Define variables in the `config.php` and use these variables to get the path, e.g.,
+- Use the `subpage_template.php` to create a new subpage (insert content into the marked region).
+- Global style settings have to made in `design.css`, make local style changes only if necessary
+- Scraping information from another website should be performed using "file_get_contents(...)" and "preg_replace" for string manipulation (example shown in positions.php)
 ```
 <!-- This includes the variable defined as designCss in config.php correctly under href -->
 
