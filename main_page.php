@@ -22,7 +22,7 @@ include($headerInc);
 	<h1 class="western">Welcome to Prof. Schoening's High Energy  Group</h1> 
 
 	<!-- Collage of our pictures (TODO: can we write a loop?)-->
-	<div class="row" style="text-align: center;" id="image-container"></div>
+<div class="row" style="text-align: center;" id="image-container"></div>
 
 <script>
   // Fetch the list of images from the PHP script
@@ -45,7 +45,7 @@ include($headerInc);
 		img.alt = image;
 		img.style.width = '80px';  // Set the desired width for the image
       	img.style.height = '100px'; // If you want to set the height too
-     	 img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
+     	img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
 
 
 		imageElement.appendChild(img);

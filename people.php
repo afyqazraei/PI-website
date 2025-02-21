@@ -23,6 +23,7 @@ include($headerInc);
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         <h1 class="western">Group Members</h1> 
 
+
         <h2 class="western">Professor</h2> 
         <div class="member">
             <img src="prof_schoning.jpg" alt="Prof. Dr. André Schöning">
