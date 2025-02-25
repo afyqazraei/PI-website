@@ -75,6 +75,7 @@ The rest of the variables are then correctly taken care in config.php.
 - Use the `subpage_template.php` to create a new subpage (insert content into the marked region).
 - Global style settings have to made in `design.css`, make local style changes only if necessary
 - Scraping information from another website should be performed using "file_get_contents(...)" and "preg_replace" for string manipulation (example shown in positions.php)
+- Use the color variables defined in the css files, don't define colors explicitly with their rgb/HEX codes
 ```
 <!-- This includes the variable defined as designCss in config.php correctly under href -->
 

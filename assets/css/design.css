@@ -1,9 +1,10 @@
-/* Define PI colors */
+/* Define colors */
 :root {
     --PI-darkred: #860000;
     --PI-lightred: #ffadad;
     --PI-red: #b5152b;
     --PI-sand: #fee2e2;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Set headers colors */
@@ -49,7 +50,7 @@ h2 {
     margin: 10px;
 }
 
-  /* Style for each member entry */
+/* Style for each member entry */
 .member {
     display: flex;
     align-items: center; /* Align image and text */
@@ -71,25 +72,25 @@ h2 {
 }
 
 a {
-    color: #b5152b;
+    color: var(--PI-red);
     text-decoration: none;
 }
 
 a:hover {
-    color: #860000; /* Darker red when hovered */
+    color: var(--PI-darkred); /* Darker red when hovered */
     text-decoration: underline; /* Optional: Add underline back on hover */
 }
 
 .member-info h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #222;
+    color: black;
 }
 
 .member-info p {
     margin: 3px 0;
     font-size: 0.9em;
-    color: #666;
+    color: gray;
 }
 
 /* Basic styling for the dropdown */
@@ -132,6 +133,7 @@ a:hover {
     display: block;
 }
 
+
 /* Dropdown button */
 .dropdown-btn {
     padding: 25px;
@@ -161,7 +163,7 @@ a:hover {
         background-color: white; /* Makes it stand out from body */
         margin: auto; /* Centers it */
         padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+        box-shadow: 0px 0px 10px var(--shadow-color); /* Optional: Adds a shadow */
         text-align: left; /* Keeps text left-aligned */
     }
 }
@@ -173,7 +175,7 @@ a:hover {
         max-width: 1500px; /* Prevents it from getting too wide */
         background-color: white; /* Makes it stand out from body */
         padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
+        box-shadow: 0px 0px 10px var(--shadow-color); /* Optional: Adds a shadow */
         text-align: left; /* Keeps text left-aligned */
     }
 

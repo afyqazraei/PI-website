@@ -125,6 +125,10 @@ include($headerInc);
 			</ul>
 		</div>
 		<br>
+
+
+	<!-- Load Javascript to toggle buttons visibility -->
+	<script type="text/javascript" src="<?php echo $buttonsJs;?>"></script>
 	</div>
 </body>
 </html>

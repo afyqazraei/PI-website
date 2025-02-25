@@ -1,3 +1,13 @@
+/* Define colors */
+:root {
+    --PI-darkred: #860000;
+    --PI-lightred: #ffadad;
+    --PI-red: #b5152b;
+    --PI-sand: #fee2e2;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+
 /* menu-pub */
 .menu-pub {
     list-style: none;
@@ -25,7 +35,7 @@
     transform: translateY(-50%);
     height: 50%;
     width: 2px;
-    background-color: #ffadad;
+    background-color: var(--PI-lightred);
 }
 
 /* 🟢 RESPONSIVE DESIGN: Hides menu-pub & shows hamburger */
@@ -47,8 +57,8 @@
         width: 70%; /* TODO: get this from design.css sub-body class */
         display: none; /* Initially hide the menu */
         flex-direction: column;
-        background-color: #ffffff; /* Background color for the menu */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+        background-color: white; /* Background color for the menu */
+        box-shadow: 0 8px 16px var(--shadow-color); /* Optional: Add some shadow for better visibility */
         z-index: 1000; /* Ensure the menu is above other elements */
     }
 
@@ -64,14 +74,14 @@
     .menu-pub li {
         text-align: left;
         width: 100%;
-        border-bottom: 2px solid #b5152b;
+        border-bottom: 2px solid var(--PI-red);
     }
 }
 
 /* Style the links inside the menu-pub */
 .menu-pub li a {
     text-decoration: none; /* Removes underline */
-    color: #000000; /* White text */
+    color: black; /* White text */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;

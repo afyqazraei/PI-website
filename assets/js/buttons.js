@@ -1,7 +1,7 @@
 // Open the corresponding dropdown menu when the button is clicked
 document.querySelectorAll('.dropdown-btn').forEach(button => {
     button.addEventListener('click', function(event) {
-        let dropdownContent = this.nextElementSibling;
+        var dropdownContent = this.nextElementSibling;
         
         // Close other open dropdowns
         document.querySelectorAll('.dropdown-content').forEach(dropdown => {

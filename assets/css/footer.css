@@ -1,9 +1,10 @@
-/* Define PI colors */
+/* Define colors */
 :root {
     --PI-darkred: #860000;
     --PI-lightred: #ffadad;
     --PI-red: #b5152b;
     --PI-sand: #fee2e2;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 .tab-bar-footer {
