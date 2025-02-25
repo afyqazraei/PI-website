@@ -68,7 +68,7 @@ include($headerInc);
     ATLAS is a general purpose detector that can observe both, proton-proton and heavy ion collisions.
     It is build like an onion, different detector types are arranged hermetically in shells around the interaction region.    
     </br>
-    <img src="<?php echo dirname($subpath);?>/figures/ATLAS/HL-LHC_Schedule.png" width="100%" alt="Atlas">
+    <img src="<?php echo $figures;?>/ATLAS/HL-LHC_Schedule.png" width="100%" alt="Atlas">
     </br>
     <p>
       Development of the LHC over time.</br>
@@ -93,7 +93,7 @@ include($headerInc);
     <br>
     After the high luminosity upgrades at the end of this decade, it is expected that there are about 200 proton-proton collisions every 25 ns.
     </br>
-    <img src="<?php echo dirname($subpath);?>/figures/ATLAS/BigData.png" width="100%" alt="Atlas">
+    <img src="<?php echo $figures;?>/ATLAS/BigData.png" width="100%" alt="Atlas">
     </br>
     <p>
       Data produced by the LHC compared with major web services.</br>
@@ -157,14 +157,14 @@ include($headerInc);
     </p> -->
     </br>
     <!-- <img src="pics-new/atlas_experiment.jpg" width="500" alt="Atlas"> -->
-    <img src="<?php echo dirname($subpath);?>/figures/ATLAS/ITk.png" width="100%" alt="Atlas-ITk">
+    <img src="<?php echo $figures;?>/ATLAS/ITk.png" width="100%" alt="Atlas-ITk">
     </br>
     <p>
       The new Inner Tracking Detector (ITk) of ATLAS for HL-LHC.</br>
       <a href="https://cds.cern.ch/record/2285585?ln=en" target="_blank" rel="noopener noreferrer"> Source</a>
     </p>
     </br>
-    <img src="<?php echo dirname($subpath);?>/figures/ATLAS/Event.png" width="100%" alt="Event">
+    <img src="<?php echo $figures;?>/ATLAS/Event.png" width="100%" alt="Event">
     </br>
     <p>
       Transversal projection of particle hits and tracks</br>

@@ -21,7 +21,7 @@ include($headerInc);
 
 
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
-        <img src='<?php echo dirname($subpath);?>/figures/mu3e/mu3e-phase2.png' width='100%' alt='mu3e_phase2_header' /> 
+        <img src='<?php echo $figures;?>/mu3e/mu3e-phase2.png' width='100%' alt='mu3e_phase2_header' /> 
 
         <h1 class="western">Mu3e Experiment Phase-II R&D</h1> 
         <h2 class="western">Phase-II Motivations</h2> 

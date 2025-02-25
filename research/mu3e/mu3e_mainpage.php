@@ -22,7 +22,7 @@ include($headerInc);
 
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         
-        <img src='<?php echo dirname($subpath);?>/figures/mu3e/vertex-cad.png' width='100%' alt='mu3e_header' />
+        <img src='<?php echo $figures;?>/mu3e/vertex-cad.png' width='100%' alt='mu3e_header' />
 
         <h1 class="western">Mu3e @ HD-PI</h1> 
 
@@ -64,7 +64,7 @@ include($headerInc);
                 <br>
                 </br>
                 <div style="text-align: center;">
-                    <img src="<?php echo dirname($subpath);?>/figures/mu3e/mupix10.jpg" alt="mu3e-mupix" style="width:30%;min-width:200px;height:auto;">
+                    <img src="<?php echo $figures;?>/mu3e/mupix10.jpg" alt="mu3e-mupix" style="width:30%;min-width:200px;height:auto;">
                 </div>
             </ul>
 
@@ -76,7 +76,7 @@ include($headerInc);
                 <br>
                 </br>
                 <div style="text-align: center;">
-                    <img src="<?php echo dirname($subpath);?>/figures/mu3e/vertex.jpg" alt="mu3e-vertex" style="width:30%;min-width:200px;height:auto;">
+                    <img src="<?php echo $figures;?>/mu3e/vertex.jpg" alt="mu3e-vertex" style="width:30%;min-width:200px;height:auto;">
                 </div>
             </ul>
 
@@ -87,7 +87,7 @@ include($headerInc);
                 <br>
                 </br>
                 <div style="text-align: center;">
-                    <img src="<?php echo dirname($subpath);?>/figures/mu3e/tracks.png" alt="mu3e-tracks" style="width:30%;min-width:200px;height:auto;">
+                    <img src="<?php echo $figures;?>/mu3e/tracks.png" alt="mu3e-tracks" style="width:30%;min-width:200px;height:auto;">
                 </div>
             </ul>
 

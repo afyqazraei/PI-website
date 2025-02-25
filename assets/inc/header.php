@@ -13,7 +13,7 @@
     <nav class="tab-bar" style="text-align: center;">
         <div class="logo">
             <a href="https://www.physi.uni-heidelberg.de/"> <!-- Add link here -->
-                <img src="<?php echo dirname($subpath);?>/figures/logo-pi.png" alt="Logo">
+                <img src="<?php echo $figures;?>/logo-pi.png" alt="Logo">
             </a>
         </div>
 
