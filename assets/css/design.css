@@ -1,10 +1,15 @@
-/* Define colors */
+/* Define colors and global variables*/
 :root {
     --PI-darkred: #860000;
     --PI-lightred: #ffadad;
     --PI-red: #b5152b;
     --PI-sand: #fee2e2;
     --shadow-color: rgba(0, 0, 0, 0.1);
+    --page-width: 70vw; /* Width of the page, set in units of vw so it can be used in subclasses with smaller dimension than the window */
+    --dropdown-button-height: 75px;
+    --border-width: 2px;
+    --border-radius: 5px; /* Determines how round the corners are */
+    --vertical-offset: 10px; /* Use this variable when the position of something below something else should be set as bottom (something else) +  offset*/
 }
 
 /* Set headers colors */
@@ -20,6 +25,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: left; /* Aligns semester titles to the left */
+    margin-left: 0px; /* Ensures no unintended margin */
+}
+
 ul {
     list-style-type: square;
     padding-left: 5 px;
@@ -29,15 +43,6 @@ ul {
 
 li {
     margin-bottom: 5px;
-}
-
-h1 {
-    text-align: left;
-}
-
-h2 {
-    text-align: left; /* Aligns semester titles to the left */
-    margin-left: 0px; /* Ensures no unintended margin */
 }
 
 .row {
@@ -93,50 +98,9 @@ a:hover {
     color: gray;
 }
 
-/* Basic styling for the dropdown */
-.dropdown {
-    position: relative;
-    display: inline-flex;
-    width: 30%;
-}
-
-/* Placeholder for the dropdown */
-.dropdown-placeholder {
-    display: block;
-    width: 100%;
-    height: 0;
-    transition: height 0.3s ease;
-}
-
-/* Box for the dropdown */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--PI-sand);
-    top: 80px; /* Position the dropdown below the button */
-    left: calc(-1 * var(--dropdown-left) + 18.225vw); /* Set the horizontal offset */
-    height: 400px; 
-    width: 63.55vw;
-    max-width: 1355px; /* Prevents it from getting too wide */
-    z-index: 1;
-    border: 2px solid var(--PI-darkred);
-    border-radius: 5px;
-    box-sizing: border-box;
-    overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
-}
-
-/* Text in the dropdow */
-.dropdown-content a {
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-}
-
-
 /* Dropdown button */
 .dropdown-btn {
-    padding: 25px;
+    height: var(--dropdown-button-height);
     font-size: 100%;
     cursor: pointer;
     flex: 1;
@@ -144,15 +108,44 @@ a:hover {
     background-color: var(--PI-sand);
     text-align: center;
     color: var(--PI-darkred);
-    border: 2px solid var(--PI-darkred);
-    border-radius: 5px;
-    width: 33%; 
+    border: var(--border-width) solid var(--PI-darkred);
+    border-radius: var(--border-radius);
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
+/* Basic styling for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+/* Box for the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--PI-sand);
+    top: calc(var(--dropdown-button-height) + var(--vertical-offset)); /* Position the dropdown below the button */
+    left: calc(-1 * var(--dropdown-left) + 0.5 * (100vw - var(--page-width))); /* Set the horizontal offset */
+    height: 400px; 
+    width: var(--page-width);
+    z-index: 1;
+    border: var(--border-width) solid var(--PI-darkred);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+}
+
+/* Text in the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
 /* Class for elements which go below the dropdown, it pushes them down when dropdown is opened */
-.content{
-    margin-top: calc( var(--dropdown-bot) + 450px);
+.content {
+    margin-top: calc(var(--dropdown-bot) + var(--vertical-offset));
 }
 
 /* subbody width is locked to 70% on Desktop */
@@ -218,7 +211,7 @@ a:hover {
         position: absolute; /* Position the dropdown relative to the page */
         background-color: var(--PI-sand);
         top: 80px; /* Position the dropdown below the button */
-        left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2);; /* Set the horizontal offset to be -dropdown-left */
+        left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2); /* Set the horizontal offset to be -dropdown-left */
         height: 400px; 
         width: 63.55vw;
         max-width: 1360px; /* Prevents it from getting too wide */

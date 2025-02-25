@@ -63,8 +63,8 @@ include($headerInc);
 	
 		<h2 style="text-align: center;">Our Research Subgroups</h2>
 		<!-- Dropdown menu with 3 buttons for the research subgroups -->	
-		<div class ="dropdown-container", style="text-align: center;">
-			<div class="dropdown">
+		<div class ="dropdown-container", style="text-align: center; width: 100%;" >
+			<div class="dropdown", style="width:  33%;" >
 				<button class="dropdown-btn">Mu3e</button>
 				<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/mu3e/">
@@ -80,7 +80,7 @@ include($headerInc);
 					</a>
 				</div>
   			</div>
-			<div class="dropdown">
+			  <div class="dropdown", style="width: 33%;" >
     			<button class="dropdown-btn">ATLAS</button>
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/ATLAS/">
@@ -96,7 +96,7 @@ include($headerInc);
 					</a>
     			</div>
   			</div>
-			<div class="dropdown">
+			<div class="dropdown", style="width:  33%;" >
     			<button class="dropdown-btn">HV-MAPS</button>
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/HVMAPS/">
