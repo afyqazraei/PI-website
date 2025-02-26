@@ -39,12 +39,12 @@ include($headerInc);
 						imageElement.style.marginLeft = '2px'; // Add space on the left of each image
 						imageElement.style.marginRight = '2px'; // Add space on the right of each image
 
-						const img = document.createElement('img');
-						img.src = `<?php echo dirname($subpath);?>/figures/group_members/${image}`;
-						img.alt = image;
-						img.style.width = '120px';  
-						img.style.height = '160px'; 
-						img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
+		const img = document.createElement('img');
+		img.src = `<?php echo $figures;?>/group_members/${image}`;
+		img.alt = image;
+		img.style.width = '120px';  // Set the desired width for the image
+      	img.style.height = '160px'; // If you want to set the height too
+     	img.style.objectFit = 'cover';  // Ensure the image maintains aspect ratio
 
 						imageElement.appendChild(img);
 						container.appendChild(imageElement);
@@ -69,7 +69,7 @@ include($headerInc);
 				<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/mu3e/">
 						<div style="display: flex; justify-content: space-between;">
-							<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="mu3e-exp" style="width:40%; object-fit: caution;">
+							<img src="<?php echo $figures;?>/mu3e.jpg" alt="mu3e-exp" style="width:40%; object-fit: caution;">
 							<p style="text-align: right; width: 55%;object-fit: caution;">
 								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 								The goal is to search for the anti-muon decay into two positrons and one electron. 
@@ -85,7 +85,7 @@ include($headerInc);
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/ATLAS/">
 						<div style="display: flex; justify-content: space-between;">
-							<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="atlas-exp" style="width:40%">
+							<img src="<?php echo $figures;?>/mu3e.jpg" alt="atlas-exp" style="width:40%">
 							<p style="text-align: right; width: 55%;">
 								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 								The goal is to search for the anti-muon decay into two positrons and one electron. 
@@ -101,7 +101,7 @@ include($headerInc);
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/HVMAPS/">
 						<div style="display: flex; justify-content: space-between;">
-							<img src="<?php echo dirname($subpath);?>/figures/mu3e.jpg" alt="hvmaps-exp" style="width:40%">
+							<img src="<?php echo $figures;?>/mu3e.jpg alt="hvmaps-exp" style="width:40%">
 							<p style="text-align: right; width: 55%;">
 								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 								The goal is to search for the anti-muon decay into two positrons and one electron. 
@@ -119,7 +119,7 @@ include($headerInc);
 			<ul> 
 				<li> Our group members had two hackaton days to create this new website!</li>
 					<video width="300" height=auto controls autoplay muted loop>
-						<source src="<?php echo dirname($subpath);?>/figures/hackaton.MOV">
+						<source src="<?php echo $figures;?>/hackaton.MOV">
 						Your browser does not support the video tag.<!-- Error message if video isn't supported -->
 					</video>
 			</ul>

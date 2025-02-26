@@ -52,7 +52,7 @@
 @media (max-width: 1268px) {
     .menu-pub {
         position: absolute;
-        top: 19%; /* Position the menu directly below the hamburger icon */
+        top: 150px; /* Position the menu directly below the hamburger icon */
         left: calc(-1 * var(--dropdown-left) + 10vw); /* Set the horizontal offset to be -dropdown-left */
         width: 70%; /* TODO: get this from design.css sub-body class */
         display: none; /* Initially hide the menu */

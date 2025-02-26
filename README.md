@@ -1,21 +1,25 @@
 # Code for PI-website
 
+## How to contribute:
+You can fork this repository and create a pull request for your changes.
+
 ## Current Directory Structure:
 
 <pre><code>
 .
 ├── assets
 │   ├── css
+│   ├── figs
 │   ├── inc
 │   └── js
-├── figures
-│   ├── test_images
-│   ├── hd_uni_logo.png
-│   └── logo-pi.png
 ├── publications
 │   ├── atlas_pub.php
 │   ├── hvmaps_pub.php
 │   └── mu3e_pub.php
+├── research
+│   ├── ATLAS
+│   ├── HV-MAPS
+│   └── mu3e
 ├── <b><i>main_page.php</i></b>
 ├── people.php
 └── teaching.php
