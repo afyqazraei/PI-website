@@ -20,6 +20,7 @@ include("header.php.inc")
     <div class="sub-body">
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         <h1 class="western">Group Members</h1> 
+        <!-- Use function from PI to get the list from the database -TODO: find out how to make it resizable-->
         <?php physi_maliste("gruppe2='ATLAS' OR gruppe2='ATLAS,H1' OR gruppe3='ATLAS' 
                                                                     OR gruppe3='ATLAS,H1' OR gruppe2='H1' OR gruppe2='mu3e'
                                                                     OR gruppe2='mu3e,H1'");
