@@ -113,6 +113,12 @@ a:hover {
     box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
+.dropdown-container {
+    display: flex; /* Make sure that buttons in the same container are aligned horizontally */
+    justify-content: space-between;
+    width: 100%;
+}
+
 /* Basic styling for the dropdown */
 .dropdown {
     position: relative;
@@ -151,7 +157,7 @@ a:hover {
 /* subbody width is locked to 70% on Desktop */
 @media (min-width: 969px) {
     .sub-body {
-        width: 70%; /* Adjust width as needed */
+        width: var(--page-width); /* Adjust width as needed */
         max-width: 1500px; /* Prevents it from getting too wide */
         background-color: white; /* Makes it stand out from body */
         margin: auto; /* Centers it */
@@ -174,32 +180,30 @@ a:hover {
 
     /* Dropdown button */
     .dropdown-btn {
-        padding: 25px;
-        font-size: 80%;
+        height: var(--dropdown-button-height);
+        font-size: 100%;
         cursor: pointer;
         flex: 1;
         font-weight: bold;
         background-color: var(--PI-sand);
         text-align: center;
         color: var(--PI-darkred);
-        border: 2px solid var(--PI-darkred);
-        border-radius: 5px;
-        width: 33%; 
-        box-sizing: border-box; /* Ensure padding and border are included in the width */
+        border: var(--border-width) solid var(--PI-darkred);
+        border-radius: var(--border-radius);
+        box-sizing: border-box;
     }
 
     .dropdown-content {
         display: none;
-        position: absolute; /* Position the dropdown relative to the page */
+        position: absolute;
         background-color: var(--PI-sand);
-        top: 76px; /* Position the dropdown below the button */
-        left: calc(-1 * var(--dropdown-left) + 8vw); /* Set the horizontal offset to be -dropdown-left */
+        top: calc(var(--dropdown-button-height) + var(--vertical-offset)); /* Position the dropdown below the button */
+        left: calc(-1 * var(--dropdown-left) ); /* Set the horizontal offset */
         height: 400px; 
-        width: 84vw;
-        max-width: 1360px; /* Prevents it from getting too wide */
+        width: 100vw;  /* TODO change this to have empty space on the left and right */
         z-index: 1;
-        border: 2px solid var(--PI-darkred);
-        border-radius: 5px;
+        border: var(--border-width) solid var(--PI-darkred);
+        border-radius: var(--border-radius);
         box-sizing: border-box;
         overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
     }
@@ -213,7 +217,7 @@ a:hover {
         top: 80px; /* Position the dropdown below the button */
         left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2); /* Set the horizontal offset to be -dropdown-left */
         height: 400px; 
-        width: 63.55vw;
+        width: var(--page-width);
         max-width: 1360px; /* Prevents it from getting too wide */
         z-index: 1;
         border: 2px solid var(--PI-darkred);

@@ -101,7 +101,7 @@ include($headerInc);
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/HVMAPS/">
 						<div style="display: flex; justify-content: space-between;">
-							<img src="<?php echo $figures;?>/mu3e.jpg alt="hvmaps-exp" style="width:40%">
+							<img src="<?php echo $figures;?>/mu3e.jpg" alt="hvmaps-exp" style="width:40%">
 							<p style="text-align: right; width: 55%;">
 								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 								The goal is to search for the anti-muon decay into two positrons and one electron. 

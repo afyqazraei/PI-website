@@ -3,7 +3,7 @@ $subpath = $_SERVER['REQUEST_URI'];
 $incpath = "assets/inc";
 include($incpath . "/config.php");
 include($headerInc);
-include("header.php.inc")
+include("header_common_he.php.inc")
 ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
@@ -21,9 +21,12 @@ include("header.php.inc")
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         <h1 class="western">Group Members</h1> 
         <!-- Use function from PI to get the list from the database -TODO: find out how to make it resizable-->
-        <?php physi_maliste("gruppe2='ATLAS' OR gruppe2='ATLAS,H1' OR gruppe3='ATLAS' 
+        <?php
+            $title = "HE group";
+            $sel = ("gruppe2='ATLAS' OR gruppe2='ATLAS,H1' OR gruppe3='ATLAS' 
                                                                     OR gruppe3='ATLAS,H1' OR gruppe2='H1' OR gruppe2='mu3e'
-                                                                    OR gruppe2='mu3e,H1'");
+                                                                    OR gruppe2='mu3e,H1'");  
+            physi_maliste_we($sel);
         ?>
         <br/>
         <h2 class="western">Former Group Members</h2>   
