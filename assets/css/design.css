@@ -1,16 +1,4 @@
-/* Define colors and global variables*/
-:root {
-    --PI-darkred: #860000;
-    --PI-lightred: #ffadad;
-    --PI-red: #b5152b;
-    --PI-sand: #fee2e2;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --page-width: 70vw; /* Width of the page, set in units of vw so it can be used in subclasses with smaller dimension than the window */
-    --dropdown-button-height: 75px;
-    --border-width: 2px;
-    --border-radius: 5px; /* Determines how round the corners are */
-    --vertical-offset: 10px; /* Use this variable when the position of something below something else should be set as bottom (something else) +  offset*/
-}
+@import "common_vars.css";
 
 /* Set headers colors */
 h1, h2, h3, h4, h5, h6 {
