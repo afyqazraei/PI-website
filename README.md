@@ -31,6 +31,7 @@ You can fork this repository and create a pull request for your changes.
 - The style, java script and some important include files are located under assets
 - Some *path variables* are defined under `assets/inc/config.php`
 - This config file together with some other paths must be exported *correctly* in all the php files 
+- Some *design variables* are defined under `assets/css/common_vars.css`
 
 Below are examples of the includes for php files at level=1 and 2.
 These lines must be placed around the content to add header and footers correctly.
