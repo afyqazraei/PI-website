@@ -87,6 +87,7 @@
     cursor: pointer;
 }
 
+
 /* Mobile dropdown adjustments */
 @media (max-width: 968px) {
     .menu {

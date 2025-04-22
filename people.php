@@ -52,6 +52,7 @@ include("header_common_he.php.inc")
             Poppy Hicks (ATLAS Tracking with GNNs, 2024)<br>
             Sachin Gupta (ATLAS Tracking with CA, 2024)<br>
             Christof Sauer (ATLAS QCD, 2019)<br>
+            Jan Patrick Hammerich (HVMAPS, 2018) <br>
             Arthur Bolz (H1, 2015)<br>
             Mathis Kolb (ATLAS Top, 2014)<br>
             Sebastian Dittmeier (ATLAS 60 GHz, 2013)<br>
