@@ -53,7 +53,7 @@ include($headerInc);
         <h2 class="western">Group Activites</h2> 
         <ul> 
             <h3 class="western">MuPix Design & Testing</h3>
-            <ul style="background-color:var(--PI-lightred);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">
+            <ul style="background-color: var(--PI-sand);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">
                 The MuPix is the silicon pixel sensor developed specifically for Mu3e, based on the <b> High Voltage Monolithic Active Pixel Sensors (HV-MAPS) </b> technology. 
                 This is one of the most promising technologies for High Energy Physics experiments as it combines high performance with low cost and high flexibility. 
                 The MuPix, in particular, implements a minimal number of connections for powering and readout, a strategy that requires novel design features for the communication with the chip itself.
