@@ -22,7 +22,9 @@ include($headerInc);
 
 <!-- ++++++++++++++++++++ Start Main Content of the page here! +++++++++++++++++++++ -->
         
-        <img src='<?php echo $figures;?>/mu3e/vertex-cad.png' width='100%' alt='mu3e_header' />
+        <div style="text-align: center;">
+            <img src='<?php echo $figures;?>/mu3e/vertex-cad.png' width='60%' alt='mu3e_header' />
+        </div>
 
         <h1 class="western">Mu3e @ HD-PI</h1> 
 
@@ -51,7 +53,7 @@ include($headerInc);
         <h2 class="western">Group Activites</h2> 
         <ul> 
             <h3 class="western">MuPix Design & Testing</h3>
-            <ul style="background-color:var(--PI-lightred);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">
+            <ul style="background-color:var(--PI-sand);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">
                 The MuPix is the silicon pixel sensor developed specifically for Mu3e, based on the <b> High Voltage Monolithic Active Pixel Sensors (HV-MAPS) </b> technology. 
                 This is one of the most promising technologies for High Energy Physics experiments as it combines high performance with low cost and high flexibility. 
                 The MuPix, in particular, implements a minimal number of connections for powering and readout, a strategy that requires novel design features for the communication with the chip itself.
@@ -69,7 +71,7 @@ include($headerInc);
             </ul>
 
             <h3 class="western">Vertex Detector</h3>
-            <ul style="background-color:var(--PI-lightred);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">
+            <ul style="background-color:var(--PI-sand);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">
                 The HD-PI Mu3e group is responsible for the <b> construction and commissioning of the vertex detector </b>. 
                 In close cooperation with the workshop, various engineering solutions are explored for the assembly of detector components, the installation, and the connection to cooling and powering systems. 
                 A mockup of the experiment is also available nearby the workshop, where solutions can be physically verified.
@@ -81,7 +83,7 @@ include($headerInc);
             </ul>
 
             <h3 class="western">Simulation Studies</h3>
-            <ul style="background-color:var(--PI-lightred);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">            
+            <ul style="background-color:var(--PI-sand);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">            
                 Alongside intensive hardware development, comprehensive simulation studies also complement the groups activies by helping understanding the effects of the detector's configuration on signal sensitivity.
                 The group is also actively participating in improving track reconstruction under the <b> General Triplet Track Fit framework </b>.
                 <br>
@@ -92,7 +94,7 @@ include($headerInc);
             </ul>
 
             <h3 class="western">Future-Related Research Activites</h3>
-            <ul style="background-color:var(--PI-lightred);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">            
+            <ul style="background-color:var(--PI-sand);border-block:3px solid var(--PI-darkred);padding-top:30px;padding-bottom:30px;padding-left:20px;padding-right:20px;">            
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eget tristique neque. Aliquam erat volutpat. Aenean laoreet neque in efficitur ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eleifend dui diam, vel eleifend tortor accumsan in. Donec sed lorem purus. Cras malesuada magna at nisl ultrices viverra. Morbi orci justo, tincidunt ac condimentum ac, pellentesque et libero. Aliquam rutrum rutrum mauris a cursus. Nam facilisis orci lectus. Curabitur id enim eu elit tempor porttitor. Nulla facilisi. Nulla facilisi. Maecenas finibus iaculis mi, ut tempor sapien efficitur vestibulum.
                 <br></br>
                 <button onclick="location.href='./mu3e_phase2.php';"  style="background-color:var(--PI-darkred);border:0;color:var(--PI-sand);padding-top:5px;padding-bottom:5px;padding-left:20px;padding-right:20px;">
