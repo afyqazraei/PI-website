@@ -120,7 +120,7 @@ a:hover {
     background-color: var(--PI-sand);
     top: calc(var(--dropdown-button-height) + var(--vertical-offset)); /* Position the dropdown below the button */
     left: calc(-1 * var(--dropdown-left) + 0.5 * (100vw - var(--page-width))); /* Set the horizontal offset */
-    height: 400px; 
+    height: calc(0.3*var(--page-width)); 
     width: var(--page-width);
     z-index: 1;
     border: var(--border-width) solid var(--PI-darkred);
@@ -134,7 +134,7 @@ a:hover {
     color: black;
     padding: 10px 10px;
     text-decoration: none;
-    display: block;
+    display: flex;
 }
 
 /* Class for elements which go below the dropdown, it pushes them down when dropdown is opened */
@@ -186,9 +186,11 @@ a:hover {
         position: absolute;
         background-color: var(--PI-sand);
         top: calc(var(--dropdown-button-height) + var(--vertical-offset)); /* Position the dropdown below the button */
-        left: calc(-1 * var(--dropdown-left) ); /* Set the horizontal offset */
-        height: 400px; 
-        width: 100vw;  /* TODO change this to have empty space on the left and right */
+        /* The following two lines keep the content centered  in mobile view*/
+        left: calc(50vw + -1 * var(--dropdown-left)); /* Start positioning from the center */
+        transform: translateX(-50%); /* Shift box back by half its width to center */
+        height: calc(0.4*var(--page-width)); /* here page width is low, so increase multiplication factor */
+        width: 90vw; /* Keeps empty space on the left and right */
         z-index: 1;
         border: var(--border-width) solid var(--PI-darkred);
         border-radius: var(--border-radius);
@@ -204,8 +206,8 @@ a:hover {
         background-color: var(--PI-sand);
         top: 80px; /* Position the dropdown below the button */
         left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2); /* Set the horizontal offset to be -dropdown-left */
-        height: 400px; 
-        width: var(--page-width);
+        height: calc(0.2*var(--page-width));  /* here page width is high, so multiplication factor is decreased*/
+        width: var(--page-width); 
         max-width: 1360px; /* Prevents it from getting too wide */
         z-index: 1;
         border: 2px solid var(--PI-darkred);
