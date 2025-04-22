@@ -68,7 +68,7 @@ include($headerInc);
 				<button class="dropdown-btn">Mu3e</button>
 				<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/mu3e/">
-						<div style="display: flex; justify-content: space-between;">
+						<div style="display: flex; align-items: center; justify-content: space-between;">
 							<img src="<?php echo $figures;?>/mu3e.jpg" alt="mu3e-exp" style="width:40%; object-fit: caution;">
 							<p style="text-align: right; width: 55%;object-fit: caution;">
 								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
@@ -84,13 +84,12 @@ include($headerInc);
     			<button class="dropdown-btn">ATLAS</button>
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/ATLAS/">
-						<div style="display: flex; justify-content: space-between;">
-							<img src="<?php echo $figures;?>/mu3e.jpg" alt="atlas-exp" style="width:40%">
+						<div style="display: flex; align-items: center; justify-content: space-between;">
+							<img src="<?php echo $figures;?>/atlas.png" alt="atlas-exp" style="width:40%">
 							<p style="text-align: right; width: 55%;">
-								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
-								The goal is to search for the anti-muon decay into two positrons and one electron. 
-								This decay channel would violate the conservation of the Charge Lepton Flavour, which is foreseen in the Standard Model only
-								at very low branching ratios. While the current limit for the branching ratio is about, Mu3e aims to exclude it, or observe it, at a sensitivity of.
+								The ATLAS experiment is one of the four large experiments currently conducted at the Large Hadron Collider (LHC) at CERN.
+								It is a general-purpose detector, aiming to provide precise measurements of the Standard Model's parameters and to investigate
+								BSM physics at the high energy scales reached by the LHC.
 							</p>
 						</div>
 					</a>
@@ -100,8 +99,8 @@ include($headerInc);
     			<button class="dropdown-btn">HV-MAPS</button>
     			<div class="dropdown-content">
 					<a href="https://www.physi.uni-heidelberg.de/Forschung/he/HVMAPS/">
-						<div style="display: flex; justify-content: space-between;">
-							<img src="<?php echo $figures;?>/mu3e.jpg" alt="hvmaps-exp" style="width:40%">
+						<div style="display: flex; align-items: center; justify-content: space-between; align-items: center;">
+							<img src="<?php echo $figures;?>/mu3e.jpg" alt="hvmaps-exp" style="width:40%;">
 							<p style="text-align: right; width: 55%;">
 								Mu3e is an experiment under construction at the Paul Scherrer Institute (PSI), in Villigen, Switzerland.
 								The goal is to search for the anti-muon decay into two positrons and one electron. 
