@@ -1,10 +1,4 @@
-/* Define PI colors */
-:root {
-    --PI-darkred: #860000;
-    --PI-lightred: #ffadad;
-    --PI-red: #b5152b;
-    --PI-sand: #fee2e2;
-}
+@import "common_vars.css";
 
 .tab-bar-footer {
     clear: both;

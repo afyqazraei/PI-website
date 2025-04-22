@@ -1,21 +1,25 @@
 # Code for PI-website
 
+## How to contribute:
+You can fork this repository and create a pull request for your changes.
+
 ## Current Directory Structure:
 
 <pre><code>
 .
 ├── assets
 │   ├── css
+│   ├── figs
 │   ├── inc
 │   └── js
-├── figures
-│   ├── test_images
-│   ├── hd_uni_logo.png
-│   └── logo-pi.png
 ├── publications
 │   ├── atlas_pub.php
 │   ├── hvmaps_pub.php
 │   └── mu3e_pub.php
+├── research
+│   ├── ATLAS
+│   ├── HV-MAPS
+│   └── mu3e
 ├── <b><i>main_page.php</i></b>
 ├── people.php
 └── teaching.php
@@ -27,6 +31,7 @@
 - The style, java script and some important include files are located under assets
 - Some *path variables* are defined under `assets/inc/config.php`
 - This config file together with some other paths must be exported *correctly* in all the php files 
+- Some *design variables* are defined under `assets/css/common_vars.css`
 
 Below are examples of the includes for php files at level=1 and 2.
 These lines must be placed around the content to add header and footers correctly.
@@ -72,11 +77,28 @@ The rest of the variables are then correctly taken care in config.php.
 - Include any new assest in the corresponding directory.
 - Do not use absolute paths/links unless necessary.
 - Define variables in the `config.php` and use these variables to get the path, e.g.,
+- Use the `subpage_template.php` to create a new subpage (insert content into the marked region).
+- Global style settings have to made in `design.css`, make local style changes only if necessary
+- Scraping information from another website should be performed using "file_get_contents(...)" and "preg_replace" for string manipulation (example shown in positions.php)
+- Use the color variables defined in the css files, don't define colors explicitly with their rgb/HEX codes
 ```
 <!-- This includes the variable defined as designCss in config.php correctly under href -->
 
 href="<?php echo $designCss;?>
 ```
+### Icluding Latex code in php using MathJax
+LaTex code can be included by including the MathJax library in the header of the page.
+```
+	<script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+	</script>
+```
+Then the following syntax can be used to render LaTex code inline `\( ... \)` or in block mode `\[ ... \]` and `$$ ... $$`.
+For example, to include the decay of a muon into three electrons, you can use:
+```
+\( \mu^+ \rightarrow e^+ e^- e^+ \)
+```
+
 ## Authors:
 - Tamasi Kar (<a href="mailto:kar@physi.uni-heidelberg.de">kar@physi.uni-heidelberg.de</a>)
 - Giulia Fazzino (<a href="mailto:gfazzino@physi.uni-heidelberg.de">gfazzino@physi.uni-heidelberg.de</a>)

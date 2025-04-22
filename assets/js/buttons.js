@@ -1,27 +1,26 @@
 // Open the corresponding dropdown menu when the button is clicked
 document.querySelectorAll('.dropdown-btn').forEach(button => {
     button.addEventListener('click', function(event) {
-        let dropdownContent = this.nextElementSibling;
+        var dropdownContent = this.nextElementSibling;
         
-        // Close all dropdowns
+        // Close other open dropdowns
         document.querySelectorAll('.dropdown-content').forEach(dropdown => {
             if (dropdown !== dropdownContent) {
-                dropdown.style.display = 'none'; // Close other dropdowns
+                dropdown.style.display = 'none'; 
+                // Reset colors and position variables
                 dropdown.previousElementSibling.style.backgroundColor ='var(--PI-sand)';
                 dropdown.previousElementSibling.style.color =  'var(--PI-darkred)';
                 document.documentElement.style.setProperty('--dropdown-bot', ``); 
                 document.documentElement.style.setProperty('--dropdown-left', ``); 
             }
         });
-        // Get dynamic coordinates of the dropdown button to place the dropdown menu, and of the menu to 
-        // place the contect below it
-        const rect = button.getBoundingClientRect();
-        const subrect = dropdownContent.getBoundingClientRect();
+
         
-        // Toggle visibility of the dropdown
+        // Toggle visibility of the clicked dropdown
         if (dropdownContent.style.display === 'block') {
-            // If dropdown is open, close it and reset color and position
+            // If dropdown is already open, close it 
             dropdownContent.style.display = 'none';
+            // Reset colors and position variables
             this.style.backgroundColor ='var(--PI-sand)'; 
             this.style.color =  'var(--PI-darkred)';
             document.documentElement.style.setProperty('--dropdown-bot', ``); 
@@ -29,9 +28,16 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
 
         } else {
             dropdownContent.style.display = 'block';
-            this.style.backgroundColor ='  #860000'; 
+
+            // Get the coordinates of the button and of the dropdown to adjust the 
+            // positions on the page accordingly when the dropdown is opened
+            const rect = button.getBoundingClientRect();
+            const subrect = dropdownContent.getBoundingClientRect();
+            // Change color of the button and text when opening the dropdown
+            this.style.backgroundColor ='var(--PI-darkred)';  
             this.style.color = 'white';
-            document.documentElement.style.setProperty('--dropdown-bot', `${subrect.bottom}px`);
+            // Set variables for position the dropdown content and what's below it
+            document.documentElement.style.setProperty('--dropdown-bot', `${subrect.height}px`);
             document.documentElement.style.setProperty('--dropdown-left', `${rect.left}px`);  
             
         }
@@ -43,7 +49,8 @@ document.querySelectorAll('.dropdown-btn').forEach(button => {
 document.addEventListener('click', function(event) {
     document.querySelectorAll('.dropdown-content').forEach(dropdown => {
         if (!dropdown.previousElementSibling.contains(event.target)) {
-            dropdown.style.display = 'none';
+            dropdown.style.display = 'none';           
+            // Reset colors and position variables
             dropdown.previousElementSibling.style.backgroundColor ='var(--PI-sand)';
             dropdown.previousElementSibling.style.color =  'var(--PI-darkred)';
             document.documentElement.style.setProperty('--dropdown-bot', ``); 
@@ -56,13 +63,11 @@ document.addEventListener('click', function(event) {
 window.addEventListener('resize', function() {
     document.querySelectorAll('.dropdown-btn').forEach(button => {
         let dropdownContent = button.nextElementSibling;
-        if (dropdownContent.style.display === 'block') { // Recalculate positions if the dropdown is open
+        if (dropdownContent.style.display === 'block') { 
+            // If there is an open dropdown, update its position and the one of the content below
             const rect = button.getBoundingClientRect();
             const subrect = dropdownContent.getBoundingClientRect();
-
-            // const scrollOffset = window.scrollY || window.pageYOffset;  // Get current scroll position
-
-           document.documentElement.style.setProperty('--dropdown-bot', `${subrect.bottom}px`);
+           document.documentElement.style.setProperty('--dropdown-bot', `${subrect.height}px`);
            document.documentElement.style.setProperty('--dropdown-left', `${rect.left}px`); 
         }
     });

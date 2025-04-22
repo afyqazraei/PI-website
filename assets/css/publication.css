@@ -1,3 +1,5 @@
+@import "common_vars.css";
+
 /* menu-pub */
 .menu-pub {
     list-style: none;
@@ -25,7 +27,7 @@
     transform: translateY(-50%);
     height: 50%;
     width: 2px;
-    background-color: #ffadad;
+    background-color: var(--PI-lightred);
 }
 
 /* 🟢 RESPONSIVE DESIGN: Hides menu-pub & shows hamburger */
@@ -42,13 +44,13 @@
 @media (max-width: 1268px) {
     .menu-pub {
         position: absolute;
-        top: 19%; /* Position the menu directly below the hamburger icon */
+        top: 150px; /* Position the menu directly below the hamburger icon */
         left: calc(-1 * var(--dropdown-left) + 10vw); /* Set the horizontal offset to be -dropdown-left */
         width: 70%; /* TODO: get this from design.css sub-body class */
         display: none; /* Initially hide the menu */
         flex-direction: column;
-        background-color: #ffffff; /* Background color for the menu */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Optional: Add some shadow for better visibility */
+        background-color: white; /* Background color for the menu */
+        box-shadow: 0 8px 16px var(--shadow-color); /* Optional: Add some shadow for better visibility */
         z-index: 1000; /* Ensure the menu is above other elements */
     }
 
@@ -64,14 +66,14 @@
     .menu-pub li {
         text-align: left;
         width: 100%;
-        border-bottom: 2px solid #b5152b;
+        border-bottom: 2px solid var(--PI-red);
     }
 }
 
 /* Style the links inside the menu-pub */
 .menu-pub li a {
     text-decoration: none; /* Removes underline */
-    color: #000000; /* White text */
+    color: black; /* White text */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-size: 18px;

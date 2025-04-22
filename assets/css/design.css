@@ -1,21 +1,25 @@
-/* Define PI colors */
-:root {
-    --PI-darkred: #860000;
-    --PI-lightred: #ffadad;
-    --PI-red: #b5152b;
-    --PI-sand: #fee2e2;
-}
+@import "common_vars.css";
 
 /* Set headers colors */
 h1, h2, h3, h4, h5, h6 {
     color: var(--PI-darkred);
 }
+
 body {
     width: 100%;
     margin: auto;
     text-align: center;
     box-sizing: border-box; 
     font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: left; /* Aligns semester titles to the left */
+    margin-left: 0px; /* Ensures no unintended margin */
 }
 
 ul {
@@ -29,157 +33,18 @@ li {
     margin-bottom: 5px;
 }
 
-/* Basic styling for the dropdown */
-.dropdown {
-    position: relative;
-    display: inline-flex;
-    width: 30%;
-}
-
-
-/* Placeholder for the dropdown */
-.dropdown-placeholder {
-    display: block;
-    width: 100%;
-    height: 0;
-    transition: height 0.3s ease;
-}
-
-/* Box for the dropdown */
-.dropdown-content {
-    display: none;
-    position: absolute; /* Position the dropdown relative to the page */
-    background-color: var(--PI-sand);
-    top: 80px; /* Position the dropdown below the button */
-    left: calc(-1 * var(--dropdown-left) + 18.225vw); /* Set the horizontal offset to be -dropdown-left */
-    height: 400px; 
-    width: 63.55vw;
-    max-width: 1355px; /* Prevents it from getting too wide */
-    z-index: 1;
-    border: 2px solid var(--PI-darkred);
-    border-radius: 5px;
-    box-sizing: border-box;
-    overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
-}
-
-/* Text in the dropdow */
-.dropdown-content a {
-    color: black;
-    padding: 10px 10px;
-    text-decoration: none;
-    display: block;
-}
-/* Dropdown button */
-.dropdown-btn {
-    padding: 25px;
-    font-size: 100%;
-    cursor: pointer;
-    flex: 1;
-    font-weight: bold;
-    background-color: var(--PI-sand);
-    text-align: center;
-    color: var(--PI-darkred);
-    border: 2px solid var(--PI-darkred);
-    border-radius: 5px;
-    width: 33%; 
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-}
-
-/* subbody width is locked to 70% on Desktop */
-@media (min-width: 969px) {
-    .sub-body {
-        width: 70%; /* Adjust width as needed */
-        max-width: 1500px; /* Prevents it from getting too wide */
-        background-color: white; /* Makes it stand out from body */
-        margin: auto; /* Centers it */
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-        text-align: left; /* Keeps text left-aligned */
-    }
-}
-
-/* Changes for Mobile */
-@media (max-width: 968px) {
-    .sub-body {
-        width: auto; /* Adjust width as needed */
-        max-width: 1500px; /* Prevents it from getting too wide */
-        background-color: white; /* Makes it stand out from body */
-        padding: 20px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow */
-        text-align: left; /* Keeps text left-aligned */
-    }
-
-    /* Dropdown button */
-    .dropdown-btn {
-        padding: 25px;
-        font-size: 80%;
-        cursor: pointer;
-        flex: 1;
-        font-weight: bold;
-        background-color: var(--PI-sand);
-        text-align: center;
-        color: var(--PI-darkred);
-        border: 2px solid var(--PI-darkred);
-        border-radius: 5px;
-        width: 33%; 
-        box-sizing: border-box; /* Ensure padding and border are included in the width */
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute; /* Position the dropdown relative to the page */
-        background-color: var(--PI-sand);
-        top: 76px; /* Position the dropdown below the button */
-        left: calc(-1 * var(--dropdown-left) + 8vw); /* Set the horizontal offset to be -dropdown-left */
-        height: 400px; 
-        width: 84vw;
-        max-width: 1360px; /* Prevents it from getting too wide */
-        z-index: 1;
-        border: 2px solid var(--PI-darkred);
-        border-radius: 5px;
-        box-sizing: border-box;
-        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
-    }
-}
-/* edge case */
-@media (min-width: 2139px) {
-    .dropdown-content {
-        display: none;
-        position: absolute; /* Position the dropdown relative to the page */
-        background-color: var(--PI-sand);
-        top: 80px; /* Position the dropdown below the button */
-        left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2);; /* Set the horizontal offset to be -dropdown-left */
-        height: 400px; 
-        width: 63.55vw;
-        max-width: 1360px; /* Prevents it from getting too wide */
-        z-index: 1;
-        border: 2px solid var(--PI-darkred);
-        border-radius: 5px;
-        box-sizing: border-box;
-        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
-    }
-}
-
-h1 {
-    text-align: left;
-}
-h2 {
-    text-align: left; /* Aligns semester titles to the left */
-    margin-left: 0px; /* Ensures no unintended margin */
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .row a {
+
+.row a {
     margin: 10px;
-  }
+}
 
-
-  /* Style for each member entry */
-  .member {
+/* Style for each member entry */
+.member {
     display: flex;
     align-items: center; /* Align image and text */
     margin-bottom: 20px;
@@ -200,26 +65,154 @@ h2 {
 }
 
 a {
-    color: #b5152b;
+    color: var(--PI-red);
     text-decoration: none;
 }
 
 a:hover {
-    color: #860000; /* Darker red when hovered */
+    color: var(--PI-darkred); /* Darker red when hovered */
     text-decoration: underline; /* Optional: Add underline back on hover */
 }
 
 .member-info h3 {
     margin: 0;
     font-size: 1.2em;
-    color: #222;
+    color: black;
 }
 
 .member-info p {
     margin: 3px 0;
     font-size: 0.9em;
-    color: #666;
+    color: gray;
 }
-.content{
-    margin-top: calc( var(--dropdown-bot) + 450px);
+
+/* Dropdown button */
+.dropdown-btn {
+    height: var(--dropdown-button-height);
+    font-size: 100%;
+    cursor: pointer;
+    flex: 1;
+    font-weight: bold;
+    background-color: var(--PI-sand);
+    text-align: center;
+    color: var(--PI-darkred);
+    border: var(--border-width) solid var(--PI-darkred);
+    border-radius: var(--border-radius);
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+.dropdown-container {
+    display: flex; /* Make sure that buttons in the same container are aligned horizontally */
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Basic styling for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-flex;
+}
+
+/* Box for the dropdown */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--PI-sand);
+    top: calc(var(--dropdown-button-height) + var(--vertical-offset)); /* Position the dropdown below the button */
+    left: calc(-1 * var(--dropdown-left) + 0.5 * (100vw - var(--page-width))); /* Set the horizontal offset */
+    height: calc(0.3*var(--page-width)); 
+    width: var(--page-width);
+    z-index: 1;
+    border: var(--border-width) solid var(--PI-darkred);
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+}
+
+/* Text in the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Class for elements which go below the dropdown, it pushes them down when dropdown is opened */
+.content {
+    margin-top: calc(var(--dropdown-bot) + var(--vertical-offset));
+}
+
+/* subbody width is locked to 70% on Desktop */
+@media (min-width: 969px) {
+    .sub-body {
+        width: var(--page-width); /* Adjust width as needed */
+        max-width: 1500px; /* Prevents it from getting too wide */
+        background-color: white; /* Makes it stand out from body */
+        margin: auto; /* Centers it */
+        padding: 20px;
+        box-shadow: 0px 0px 10px var(--shadow-color); /* Optional: Adds a shadow */
+        text-align: left; /* Keeps text left-aligned */
+    }
+}
+
+/* Changes for Mobile */
+@media (max-width: 968px) {
+    .sub-body {
+        width: auto; /* Adjust width as needed */
+        max-width: 1500px; /* Prevents it from getting too wide */
+        background-color: white; /* Makes it stand out from body */
+        padding: 20px;
+        box-shadow: 0px 0px 10px var(--shadow-color); /* Optional: Adds a shadow */
+        text-align: left; /* Keeps text left-aligned */
+    }
+
+    /* Dropdown button */
+    .dropdown-btn {
+        height: var(--dropdown-button-height);
+        font-size: 100%;
+        cursor: pointer;
+        flex: 1;
+        font-weight: bold;
+        background-color: var(--PI-sand);
+        text-align: center;
+        color: var(--PI-darkred);
+        border: var(--border-width) solid var(--PI-darkred);
+        border-radius: var(--border-radius);
+        box-sizing: border-box;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--PI-sand);
+        top: calc(var(--dropdown-button-height) + var(--vertical-offset)); /* Position the dropdown below the button */
+        /* The following two lines keep the content centered  in mobile view*/
+        left: calc(50vw + -1 * var(--dropdown-left)); /* Start positioning from the center */
+        transform: translateX(-50%); /* Shift box back by half its width to center */
+        height: calc(0.4*var(--page-width)); /* here page width is low, so increase multiplication factor */
+        width: 90vw; /* Keeps empty space on the left and right */
+        z-index: 1;
+        border: var(--border-width) solid var(--PI-darkred);
+        border-radius: var(--border-radius);
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    }
+}
+/* edge case */
+@media (min-width: 2139px) {
+    .dropdown-content {
+        display: none;
+        position: absolute; /* Position the dropdown relative to the page */
+        background-color: var(--PI-sand);
+        top: 80px; /* Position the dropdown below the button */
+        left: calc(-1 * var(--dropdown-left) + (100vw - 1360px) / 2); /* Set the horizontal offset to be -dropdown-left */
+        height: calc(0.2*var(--page-width));  /* here page width is high, so multiplication factor is decreased*/
+        width: var(--page-width); 
+        max-width: 1360px; /* Prevents it from getting too wide */
+        z-index: 1;
+        border: 2px solid var(--PI-darkred);
+        border-radius: 5px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Make the dropdown content scrollable if it exceeds the height */
+    }
 }
